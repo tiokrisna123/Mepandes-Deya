@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  /* Warna Utama */
+  --color-primary: #5C1A1F;
+  --color-secondary: #28402F;
+
+  /* Warna pendukung */
+  --color-charcoal: #2B2421;
+  --color-cream: #F7F3EA;
+  --color-ivory: #FCFAF5;
+  --color-gold: #B08D57;
+}
+
+@layer utilities {
+  .masonry {
+    column-count: 2;
+    column-gap: 1rem;
+  }
+  @media (min-width: 768px) {
+    .masonry {
+      column-count: 3;
+    }
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar for wishes container */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #5C1A1F;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #28402F;
+}
+
