@@ -1,26 +1,25 @@
 import { Profile, GalleryItem, Wish } from '../types';
-
-export const PROFILES: Profile[] = [
+export const PROFILES = [
   {
     id: 'putu',
-    name: 'Putu',
+    name: 'Wayan Alya Febriayu',
     order: 'Anak Pertama',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600',
-    bio: 'Putra Pertama dari Pasangan I Gede Suarta & Ni Kadek Ratni'
+    image: '/assets/foto-alya-profile.JPG',
+    bio: 'Putri Pertama dari Pasangan I Made Suryasa & N. Suressumiati',
   },
   {
     id: 'made',
-    name: 'Made',
+    name: 'Made Deya Indriyani',
     order: 'Anak Kedua',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600',
-    bio: 'Putra Kedua dari Pasangan I Gede Suarta & Ni Kadek Ratni'
+    image: '/assets/foto-deya-profile.JPG',
+    bio: 'Putri Kedua dari Pasangan I Made Suryasa & N. Suressumiati'
   },
   {
     id: 'nyoman',
-    name: 'Nyoman',
+    name: 'Komang Resya Juwanita Dewi',
     order: 'Anak Ketiga',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600',
-    bio: 'Putri Ketiga dari Pasangan I Gede Suarta & Ni Kadek Ratni'
+    image: '/assets/foto-resya-profilee.JPG',
+    bio: 'Putri Ketiga dari Pasangan I Made Suryasa & N. Suressumiati'
   }
 ];
 
