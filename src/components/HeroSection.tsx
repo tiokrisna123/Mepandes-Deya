@@ -88,7 +88,7 @@ export const HeroSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[77%]
+          top-[75%]
           z-20
           h-[40%]
           w-auto
@@ -108,7 +108,7 @@ export const HeroSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[77%]
+          top-[75%]
           z-20
           h-[40%]
           w-auto

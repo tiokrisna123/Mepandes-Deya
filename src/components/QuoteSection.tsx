@@ -6,6 +6,7 @@ export const QuoteSection: React.FC = () => {
     <section
       className="
         relative
+        -mt-[1px]
         overflow-visible
         bg-gradient-to-b
         from-[#5C1A1F]
@@ -20,10 +21,8 @@ export const QuoteSection: React.FC = () => {
           FLORAL FRAME
       ========================== */}
 
-      {/* =========================
-          KIRI TENGAH ATAS
-          Sambungan dari Hero Section
-      ========================== */}
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -31,9 +30,9 @@ export const QuoteSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[-70px]
+          top-[-20%]
           z-20
-          h-[320px]
+          h-[55%]
           w-auto
           object-contain
           object-left
@@ -41,10 +40,8 @@ export const QuoteSection: React.FC = () => {
         "
       />
 
-      {/* =========================
-          KANAN TENGAH ATAS
-          Sambungan dari Hero Section
-      ========================== */}
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -52,9 +49,9 @@ export const QuoteSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[-50px]
+          top-[-20%]
           z-20
-          h-[320px]
+          h-[55%]
           w-auto
           scale-x-[-1]
           object-contain
@@ -63,9 +60,7 @@ export const QuoteSection: React.FC = () => {
         "
       />
 
-      {/* =========================
-          KIRI TENGAH
-      ========================== */}
+      {/* KIRI TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -73,9 +68,9 @@ export const QuoteSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[47%]
+          top-[50%]
           z-20
-          h-[45%]
+          h-[55%]
           w-auto
           -translate-y-1/2
           object-contain
@@ -84,9 +79,7 @@ export const QuoteSection: React.FC = () => {
         "
       />
 
-      {/* =========================
-          KANAN TENGAH
-      ========================== */}
+      {/* KANAN TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -94,9 +87,9 @@ export const QuoteSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[47%]
+          top-[50%]
           z-20
-          h-[45%]
+          h-[55%]
           w-auto
           -translate-y-1/2
           scale-x-[-1]
@@ -106,9 +99,7 @@ export const QuoteSection: React.FC = () => {
         "
       />
 
-      {/* =========================
-          KIRI TENGAH BAWAH
-      ========================== */}
+      {/* KIRI TENGAH BAWAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -116,9 +107,9 @@ export const QuoteSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[78%]
+          top-[90%]
           z-20
-          h-[45%]
+          h-[55%]
           w-auto
           -translate-y-1/2
           object-contain
@@ -127,9 +118,7 @@ export const QuoteSection: React.FC = () => {
         "
       />
 
-      {/* =========================
-          KANAN TENGAH BAWAH
-      ========================== */}
+      {/* KANAN TENGAH BAWAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -137,49 +126,14 @@ export const QuoteSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[78%]
+          top-[90%]
           z-20
-          h-[45%]
+          h-[55%]
           w-auto
           -translate-y-1/2
           scale-x-[-1]
           object-contain
           object-left
-          select-none
-        "
-      />
-
-      {/* =========================
-          KIRI BAWAH
-      ========================== */}
-      <img
-        src="/assets/floral-kiri-bawah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          bottom-0
-          left-0
-          z-20
-          w-[40%]
-          select-none
-        "
-      />
-
-      {/* =========================
-          KANAN BAWAH
-      ========================== */}
-      <img
-        src="/assets/floral-kiri-bawah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          bottom-0
-          right-0
-          z-20
-          w-[40%]
-          scale-x-[-1]
           select-none
         "
       />
@@ -187,14 +141,26 @@ export const QuoteSection: React.FC = () => {
       {/* =========================
           CONTENT
       ========================== */}
-      <div className="relative z-30 mx-auto max-w-2xl reveal active">
-        <Quote className="mx-auto mb-8 h-10 w-10 text-[#d8b36a] opacity-90" />
+
+      <div
+        className="
+          relative
+          z-30
+          mx-auto
+          w-full
+          max-w-[280px]
+          -translate-y-10
+          reveal
+          active
+        "
+      >
+        <Quote className="mx-auto mb-7 h-10 w-10 text-[#d8b36a] opacity-90" />
 
         <p
           className="
-            mb-8
+            mb-7
             font-serif
-            text-xl
+            text-lg
             font-normal
             italic
             leading-relaxed

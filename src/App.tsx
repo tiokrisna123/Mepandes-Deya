@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import { WelcomeCover } from './components/WelcomeCover';
 import { HeroSection } from './components/HeroSection';
 import { QuoteSection } from './components/QuoteSection';
