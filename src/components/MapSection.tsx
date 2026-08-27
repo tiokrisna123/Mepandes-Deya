@@ -83,6 +83,25 @@ export const MapSection: React.FC = () => {
           select-none
         "
       />
+      {/* KANAN TENGAH
+          Sambungan dari Event Info Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[20%]
+          z-20
+          h-[54%]
+          w-auto
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
 
       {/* =========================
           BUTTON GOOGLE MAPS
