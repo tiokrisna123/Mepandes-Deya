@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Profile } from '../types';
 
@@ -12,10 +11,10 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   onSelectImage,
 }) => {
   return (
-    <section 
+    <section
       className="
-        relative 
-        overflow-visible 
+        relative
+        overflow-visible
         bg-gradient-to-b
         from-[#28402F]
         via-[#26382E]
@@ -23,18 +22,15 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
         via-[#3d171d]
         via-[55%]
         to-[#5C1A1F]
-        px-6 
+        px-6
         py-24
-    
       "
     >
-      
       {/* =========================
           FLORAL FRAME
       ========================== */}
 
-      {/* KIRI TENGAH ATAS
-          Sambungan dari Quote Section */}
+      {/* KIRI TENGAH ATAS */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -44,7 +40,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           left-0
           top-[2%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           object-contain
           object-left
@@ -52,8 +48,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
         "
       />
 
-      {/* KANAN TENGAH ATAS
-          Sambungan dari Quote Section */}
+      {/* KANAN TENGAH ATAS */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -63,7 +58,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           right-0
           top-[2%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           scale-x-[-1]
           object-contain
@@ -71,8 +66,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KIRI TENGAH 
-          Sambungan dari Quote Section */}
+
+      {/* KIRI TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -82,7 +77,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           left-0
           top-[8%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           translate-y-1/2
           object-contain
@@ -90,8 +85,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KANAN TENGAH 
-          Sambungan dari Quote Section */}
+
+      {/* KANAN TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -101,7 +96,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           right-0
           top-[8%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           scale-x-[-1]
           translate-y-1/2
@@ -110,8 +105,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KIRI TENGAH 
-          Sambungan dari Quote Section */}
+
+      {/* KIRI TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -121,7 +116,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           left-0
           top-[23%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           translate-y-1/2
           object-contain
@@ -129,8 +124,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KANAN TENGAH 
-          Sambungan dari Quote Section */}
+
+      {/* KANAN TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -140,7 +135,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           right-0
           top-[23%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           scale-x-[-1]
           translate-y-1/2
@@ -149,8 +144,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KIRI TENGAH 
-          Sambungan dari Quote Section */}
+
+      {/* KIRI TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -160,7 +155,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           left-0
           top-[38%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           translate-y-1/2
           object-contain
@@ -168,8 +163,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KANAN TENGAH 
-          Sambungan dari Quote Section */}
+
+      {/* KANAN TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -179,7 +174,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           right-0
           top-[38%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           translate-y-1/2
           scale-x-[-1]
@@ -188,8 +183,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KIRI TENGAH 
-          Sambungan dari Quote Section */}
+
+      {/* KIRI TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -199,7 +194,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           left-0
           top-[53%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           translate-y-1/2
           object-contain
@@ -207,8 +202,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KANAN TENGAH 
-          Sambungan dari Quote Section */}
+
+      {/* KANAN TENGAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -218,7 +213,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           right-0
           top-[53%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           translate-y-1/2
           scale-x-[-1]
@@ -227,8 +222,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KIRI TENGAH BAWAH
-          Sambungan dari Quote Section */}
+
+      {/* KIRI TENGAH BAWAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -238,7 +233,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           left-0
           bottom-[14%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           translate-y-1/2
           object-contain
@@ -246,8 +241,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           select-none
         "
       />
-      {/* KANAN TENGAH BAWAH
-          Sambungan dari Quote Section */}
+
+      {/* KANAN TENGAH BAWAH */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -257,7 +252,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           right-0
           bottom-[14%]
           z-20
-          h-[18%]
+          h-[15%]
           w-auto
           translate-y-1/2
           scale-x-[-1]
@@ -270,8 +265,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
       {/* =========================
           CONTENT
       ========================== */}
+
       <div className="relative z-30 mx-auto flex max-w-4xl flex-col items-center">
-        
         <p className="mb-3 text-center font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-gold">
           PUTRA PUTRI KAMI
         </p>
@@ -286,15 +281,14 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
               key={person.id}
               className="group reveal active flex flex-col items-center text-center"
             >
-
-              {/* Foto */}
+              {/* FOTO */}
               <div
                 onClick={() => onSelectImage(person.image, person.name)}
                 className="
                   relative
                   mb-6
-                  h-48
-                  w-48
+                  h-80
+                  w-60
                   cursor-pointer
                   overflow-hidden
                   rounded-none
@@ -312,10 +306,14 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
                 <img
                   src={person.image}
                   alt={person.name}
-                  className="h-full w-full object-cover"
+                  className={`h-full w-full object-cover scale-100 ${
+                    person.id === 'made'
+                      ? 'scale-[1.5] -translate-y-4'
+                      : 'scale-130'
+                  }`}
                 />
 
-                {/* Overlay saat hover */}
+                {/* OVERLAY SAAT HOVER */}
                 <div className="absolute inset-0 flex items-center justify-center bg-primary/0 transition-colors group-hover:bg-primary/10">
                   <span className="rounded-full bg-black/50 px-3 py-1 font-sans text-xs text-white opacity-0 transition-opacity group-hover:opacity-100">
                     Lihat Foto
@@ -323,7 +321,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
                 </div>
               </div>
 
-              {/* Nama */}
+              {/* NAMA */}
               <p className="mb-1 text-center font-serif text-2xl font-medium italic leading-tight text-cream">
                 {person.id === 'nyoman' ? (
                   <>
@@ -336,22 +334,20 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
                 )}
               </p>
 
-              {/* Urutan Anak */}
+              {/* URUTAN ANAK */}
               <p className="mb-1 text-center font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-gold">
                 {person.order}
               </p>
 
-              {/* Biodata */}
+              {/* BIODATA */}
               {person.bio && (
                 <p className="mt-2 max-w-[250px] text-center font-sans text-xs font-light leading-relaxed text-ivory/80">
                   {person.bio}
                 </p>
               )}
-
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
