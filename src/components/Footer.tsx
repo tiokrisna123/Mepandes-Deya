@@ -7,8 +7,41 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
   return (
-    <footer className="py-12 px-6 text-center bg-white border-t border-gray-100 relative">
-      <div className="reveal active flex flex-col items-center">
+    <footer className="relative overflow-visible bg-white px-6 py-12 text-center border-t border-gray-100">
+
+      {/* =========================
+          FLORAL FRAME - KIRI BAWAH
+      ========================== */}
+      <img
+        src="/assets/floral-kiri-bawah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          bottom-[-6%]
+          left-[-1%]
+          z-20
+          w-[40%]
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-bawah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          bottom-[-6%]
+          right-[-1%]
+          z-20
+          w-[40%]
+          select-none
+          scale-x-[-1]
+        "
+      />
+
+      {/* CONTENT */}
+      <div className="relative z-30 reveal active flex flex-col items-center">
         <button
           onClick={onOpenLinkGenerator}
           className="mb-8 px-4 py-2 border border-primary/40 text-primary font-sans text-[9px] tracking-[0.2em] uppercase hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 rounded-xs cursor-pointer"
@@ -20,10 +53,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
         <p className="font-sans text-[8px] tracking-[0.4em] text-gray-400 mb-2 uppercase">
           CREATED BY MAITEKA
         </p>
+
         <p className="font-sans text-[8px] tracking-[0.2em] text-gray-300">
           © 2026 MEPANDES CEREMONY
         </p>
       </div>
+
     </footer>
   );
 };

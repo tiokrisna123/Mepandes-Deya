@@ -37,9 +37,9 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[-25%]
+          top-[-63%]
           z-20
-          h-[54%]
+          h-[59%]
           w-auto
           object-contain
           object-left
@@ -55,9 +55,9 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[-25%]
+          top-[-63%]
           z-20
-          h-[54%]
+          h-[59%]
           w-auto
           scale-x-[-1]
           object-contain
@@ -74,9 +74,9 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[20%]
+          top-[-14%]
           z-20
-          h-[54%]
+          h-[59%]
           w-auto
           object-contain
           object-left
@@ -92,9 +92,46 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[20%]
+          top-[-14%]
           z-20
-          h-[54%]
+          h-[59%]
+          w-auto
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH
+          Sambungan dari Event Info Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[34%]
+          z-20
+          h-[59%]
+          w-auto
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH
+          Sambungan dari Event Info Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[34%]
+          z-20
+          h-[59%]
           w-auto
           scale-x-[-1]
           object-contain

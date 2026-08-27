@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Wish } from '../types';
-import { CheckCircle2, MessageSquare, UserCheck, Users } from 'lucide-react';
+import {
+  CheckCircle2,
+  MessageSquare,
+  UserCheck,
+} from 'lucide-react';
 
 interface RsvpSectionProps {
   wishes: Wish[];
@@ -12,19 +16,26 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
   onAddWish,
 }) => {
   const [name, setName] = useState('');
-  const [attendance, setAttendance] = useState<'hadir' | 'tidak_hadir' | ''>('');
+  const [attendance, setAttendance] = useState<
+    'hadir' | 'tidak_hadir' | ''
+  >('');
+
   const [guestCount, setGuestCount] = useState<string>('1');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!name.trim() || !attendance || !message.trim()) return;
 
     onAddWish({
       name: name.trim(),
       attendance: attendance as 'hadir' | 'tidak_hadir',
-      guestCount: attendance === 'hadir' ? parseInt(guestCount, 10) || 1 : 0,
+      guestCount:
+        attendance === 'hadir'
+          ? parseInt(guestCount, 10) || 1
+          : 0,
       message: message.trim(),
     });
 
@@ -40,70 +51,357 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
   };
 
   return (
-    <section className="bg-cream py-24 px-6 border-b border-gray-100">
-      <div className="max-w-xl mx-auto text-center">
+    <section
+      className="
+        relative
+        overflow-visible
+        bg-cream
+        px-6
+        py-24
+        border-b
+        border-gray-100
+      "
+    >
+      {/* =========================
+          FLORAL FRAME
+      ========================== */}
+
+      {/* KIRI TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[-0%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          object-contain
+          object-left
+        "
+      />
+      {/* KANAN TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[-0%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          scale-x-[-1]
+          object-contain
+          object-left
+        "
+      />
+      {/* KIRI TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[17.5%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          object-contain
+          object-left
+        "
+      />
+      {/* KANAN TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[17.5%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          scale-x-[-1]
+          object-contain
+          object-left
+        "
+      />
+      {/* KIRI TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[35%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          object-contain
+          object-left
+        "
+      />
+      {/* KANAN TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[35%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          scale-x-[-1]
+          object-contain
+          object-left
+        "
+      />
+      {/* KIRI TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[52.5%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          object-contain
+          object-left
+        "
+      />
+      {/* KANAN TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[52.5%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          scale-x-[-1]
+          object-contain
+          object-left
+        "
+      />
+      {/* KIRI TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          bottom-[9%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          object-contain
+          object-left
+        "
+      />
+      {/* KANAN TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          bottom-[9%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          scale-x-[-1]
+          object-contain
+          object-left
+        "
+      />
+      {/* KIRI TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          bottom-[-7%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          object-contain
+          object-left
+        "
+      />
+      {/* KANAN TENGAH ATAS */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          bottom-[-7%]
+          z-20
+          h-[21%]
+          w-auto
+          select-none
+          scale-x-[-1]
+          object-contain
+          object-left
+        "
+      />
+
+      {/* =========================
+          CONTENT
+      ========================== */}
+
+      <div className="relative z-30 mx-auto max-w-xl text-center">
         <div className="reveal active mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl italic mb-4 text-charcoal">
+          <h2 className="mb-4 font-serif text-3xl italic text-charcoal md:text-4xl">
             Terima Kasih
           </h2>
-          <p className="text-sm text-gray-600 leading-relaxed font-light">
-            Merupakan suatu kehormatan bagi kami atas kehadiran Bapak/Ibu/Saudara/i.
+
+          <p className="font-light text-sm leading-relaxed text-gray-600">
+            Merupakan suatu kehormatan bagi kami atas kehadiran
+            Bapak/Ibu/Saudara/i.
           </p>
         </div>
 
+        {/* SUCCESS MESSAGE */}
         {submitted && (
-          <div className="mb-8 p-6 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-sm text-center flex flex-col items-center gap-2 animate-fade-in">
-            <CheckCircle2 className="w-8 h-8 text-emerald-600" />
-            <p className="font-serif italic text-lg">Konfirmasi Berhasil Terkirim</p>
-            <p className="text-xs font-sans text-emerald-700">
+          <div className="mb-8 flex flex-col items-center gap-2 rounded-sm border border-emerald-200 bg-emerald-50 p-6 text-center text-emerald-800 animate-fade-in">
+            <CheckCircle2 className="h-8 w-8 text-emerald-600" />
+
+            <p className="font-serif text-lg italic">
+              Konfirmasi Berhasil Terkirim
+            </p>
+
+            <p className="font-sans text-xs text-emerald-700">
               Matur Suksma atas doa dan konfirmasi kehadiran Anda.
             </p>
           </div>
         )}
 
-        {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-8 reveal active text-left">
+        {/* =========================
+            FORM
+        ========================== */}
+
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-8 text-left reveal active"
+        >
+          {/* NAMA */}
           <div>
-            <label className="block text-[9px] font-sans tracking-[0.2em] text-gray-500 uppercase mb-1">
+            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-gray-500">
               NAMA LENGKAP *
             </label>
+
             <input
               type="text"
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Masukkan Nama Anda"
-              className="w-full bg-transparent border-0 border-b border-primary/40 py-3 font-sans text-xs tracking-[0.1em] focus:ring-0 focus:border-primary transition-colors text-charcoal placeholder:text-gray-400"
+              className="
+                w-full
+                border-0
+                border-b
+                border-primary/40
+                bg-transparent
+                py-3
+                font-sans
+                text-xs
+                tracking-[0.1em]
+                text-charcoal
+                placeholder:text-gray-400
+                transition-colors
+                focus:border-primary
+                focus:ring-0
+              "
             />
           </div>
 
+          {/* KONFIRMASI */}
           <div>
-            <label className="block text-[9px] font-sans tracking-[0.2em] text-gray-500 uppercase mb-1">
+            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-gray-500">
               KONFIRMASI KEHADIRAN *
             </label>
+
             <select
               required
               value={attendance}
-              onChange={(e) => setAttendance(e.target.value as 'hadir' | 'tidak_hadir')}
-              className="w-full bg-transparent border-0 border-b border-primary/40 py-3 font-sans text-xs tracking-[0.1em] focus:ring-0 focus:border-primary transition-colors text-charcoal cursor-pointer"
+              onChange={(e) =>
+                setAttendance(
+                  e.target.value as 'hadir' | 'tidak_hadir'
+                )
+              }
+              className="
+                w-full
+                cursor-pointer
+                border-0
+                border-b
+                border-primary/40
+                bg-transparent
+                py-3
+                font-sans
+                text-xs
+                tracking-[0.1em]
+                text-charcoal
+                transition-colors
+                focus:border-primary
+                focus:ring-0
+              "
             >
               <option value="" disabled className="text-gray-400">
                 PILIH KONFIRMASI KEHADIRAN
               </option>
-              <option value="hadir" className="text-charcoal bg-white">
+
+              <option value="hadir" className="bg-white text-charcoal">
                 SAYA AKAN HADIR
               </option>
-              <option value="tidak_hadir" className="text-charcoal bg-white">
+
+              <option
+                value="tidak_hadir"
+                className="bg-white text-charcoal"
+              >
                 SAYA TIDAK BISA HADIR
               </option>
             </select>
           </div>
 
+          {/* JUMLAH TAMU */}
           {attendance === 'hadir' && (
             <div>
-              <label className="block text-[9px] font-sans tracking-[0.2em] text-gray-500 uppercase mb-1">
+              <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-gray-500">
                 JUMLAH TAMU *
               </label>
+
               <input
                 type="number"
                 min="1"
@@ -111,77 +409,166 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
                 value={guestCount}
                 onChange={(e) => setGuestCount(e.target.value)}
                 placeholder="JUMLAH TAMU"
-                className="w-full bg-transparent border-0 border-b border-primary/40 py-3 font-sans text-xs tracking-[0.1em] focus:ring-0 focus:border-primary transition-colors text-charcoal"
+                className="
+                  w-full
+                  border-0
+                  border-b
+                  border-primary/40
+                  bg-transparent
+                  py-3
+                  font-sans
+                  text-xs
+                  tracking-[0.1em]
+                  text-charcoal
+                  transition-colors
+                  focus:border-primary
+                  focus:ring-0
+                "
               />
             </div>
           )}
 
+          {/* UCAPAN */}
           <div>
-            <label className="block text-[9px] font-sans tracking-[0.2em] text-gray-500 uppercase mb-1">
+            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-gray-500">
               UCAPAN &amp; DOA RESTU *
             </label>
+
             <textarea
               required
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Tuliskan pesan, ucapan & doa restu..."
-              className="w-full bg-transparent border-0 border-b border-primary/40 py-3 font-sans text-xs tracking-[0.1em] focus:ring-0 focus:border-primary transition-colors resize-none text-charcoal placeholder:text-gray-400"
-            ></textarea>
+              className="
+                w-full
+                resize-none
+                border-0
+                border-b
+                border-primary/40
+                bg-transparent
+                py-3
+                font-sans
+                text-xs
+                tracking-[0.1em]
+                text-charcoal
+                placeholder:text-gray-400
+                transition-colors
+                focus:border-primary
+                focus:ring-0
+              "
+            />
           </div>
 
+          {/* BUTTON */}
           <button
             type="submit"
-            className="w-full py-5 bg-primary text-white font-sans text-[10px] tracking-[0.3em] uppercase hover:bg-charcoal transition-all duration-500 shadow-lg cursor-pointer flex items-center justify-center gap-2"
+            className="
+              flex
+              w-full
+              cursor-pointer
+              items-center
+              justify-center
+              gap-2
+              bg-primary
+              py-5
+              font-sans
+              text-[10px]
+              uppercase
+              tracking-[0.3em]
+              text-white
+              shadow-lg
+              transition-all
+              duration-500
+              hover:bg-charcoal
+            "
           >
-            <MessageSquare className="w-4 h-4" />
+            <MessageSquare className="h-4 w-4" />
             KIRIM KONFIRMASI
           </button>
         </form>
 
-        {/* Wishes Feed */}
+        {/* =========================
+            WISHES FEED
+        ========================== */}
+
         <div className="mt-24 text-left">
-          <div className="flex items-center justify-between mb-8 pb-3 border-b border-primary/20">
-            <h3 className="font-sans text-[10px] tracking-[0.3em] text-primary uppercase font-semibold flex items-center gap-2">
-              <MessageSquare className="w-4 h-4" />
+          <div className="mb-8 flex items-center justify-between border-b border-primary/20 pb-3">
+            <h3 className="flex items-center gap-2 font-sans text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
+              <MessageSquare className="h-4 w-4" />
               Ucapan Tamu ({wishes.length})
             </h3>
-            <span className="text-[10px] font-sans text-gray-400">
-              {wishes.filter((w) => w.attendance === 'hadir').length} Akam Hadir
+
+            <span className="font-sans text-[10px] text-gray-400">
+              {
+                wishes.filter(
+                  (w) => w.attendance === 'hadir'
+                ).length
+              }{' '}
+              Akan Hadir
             </span>
           </div>
 
-          <div className="max-h-[420px] overflow-y-auto space-y-4 pr-1">
+          <div className="max-h-[420px] space-y-4 overflow-y-auto pr-1">
             {wishes.map((item) => (
               <div
                 key={item.id}
-                className="bg-white p-6 md:p-8 border border-gray-100 rounded-xs shadow-xs hover:border-primary/30 transition-colors"
+                className="
+                  rounded-xs
+                  border
+                  border-gray-100
+                  bg-white
+                  p-6
+                  shadow-xs
+                  transition-colors
+                  hover:border-primary/30
+                  md:p-8
+                "
               >
-                <div className="flex items-center justify-between mb-2">
-                  <p className="font-serif text-charcoal font-medium text-base md:text-lg flex items-center gap-2">
+                <div className="mb-2 flex items-center justify-between">
+                  <p className="flex items-center gap-2 font-serif text-base font-medium text-charcoal md:text-lg">
                     {item.name}
                   </p>
+
                   <span
-                    className={`text-[9px] font-sans uppercase px-2 py-0.5 rounded-full tracking-wider flex items-center gap-1 ${
-                      item.attendance === 'hadir'
-                        ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
-                        : 'bg-gray-100 text-gray-500'
-                    }`}
+                    className={`
+                      flex
+                      items-center
+                      gap-1
+                      rounded-full
+                      px-2
+                      py-0.5
+                      font-sans
+                      text-[9px]
+                      uppercase
+                      tracking-wider
+                      ${
+                        item.attendance === 'hadir'
+                          ? 'border border-emerald-200 bg-emerald-50 text-emerald-700'
+                          : 'bg-gray-100 text-gray-500'
+                      }
+                    `}
                   >
                     {item.attendance === 'hadir' ? (
                       <>
-                        <UserCheck className="w-3 h-3" /> Hadir
-                        {item.guestCount && item.guestCount > 1 && ` (${item.guestCount})`}
+                        <UserCheck className="h-3 w-3" />
+                        Hadir
+
+                        {item.guestCount &&
+                          item.guestCount > 1 &&
+                          ` (${item.guestCount})`}
                       </>
                     ) : (
                       'Halangan'
                     )}
                   </span>
                 </div>
-                <p className="italic text-gray-600 leading-relaxed text-sm font-light">
+
+                <p className="font-light italic text-sm leading-relaxed text-gray-600">
                   &ldquo;{item.message}&rdquo;
                 </p>
-                <p className="text-[9px] font-sans text-gray-400 mt-3 text-right">
+
+                <p className="mt-3 text-right font-sans text-[9px] text-gray-400">
                   {item.timestamp}
                 </p>
               </div>

@@ -37,7 +37,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[6%]
+          top-[-14%]
           z-20
           h-[35%]
           w-auto
@@ -55,7 +55,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[6%]
+          top-[-14%]
           z-20
           h-[35%]
           w-auto
@@ -74,7 +74,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[18%]
+          top-[-3%]
           z-20
           h-[35%]
           w-auto
@@ -93,7 +93,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[18%]
+          top-[-3%]
           z-20
           h-[35%]
           w-auto
@@ -113,7 +113,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          bottom-[17%]
+          bottom-[39%]
           z-20
           h-[35%]
           w-auto
@@ -132,7 +132,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          bottom-[17%]
+          bottom-[39%]
           z-20
           h-[35%]
           w-auto
