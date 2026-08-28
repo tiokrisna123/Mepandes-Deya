@@ -1,20 +1,19 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+
 @theme {
   --font-serif: "Playfair Display", serif;
   --font-sans: "Montserrat", sans-serif;
   
-  /* Warna Utama */
+  /* Tambahkan prefix 'color-' secara eksplisit */
   --color-primary: #5C1A1F;
   --color-secondary: #28402F;
-
-  /* Warna pendukung */
   --color-charcoal: #2B2421;
   --color-cream: #F7F3EA;
   --color-ivory: #FCFAF5;
   --color-gold: #B08D57;
 }
-
 @layer utilities {
   .masonry {
     column-count: 2;

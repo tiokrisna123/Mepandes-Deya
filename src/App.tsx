@@ -12,16 +12,21 @@ import { AudioPlayer } from './components/AudioPlayer';
 import { LightboxModal } from './components/LightboxModal';
 import { LinkGeneratorModal } from './components/LinkGeneratorModal';
 import { Footer } from './components/Footer';
+import { DigitalGiftSection } from './components/DigitalGiftSection';
 
 import {
   PROFILES,
   GALLERY_ITEMS,
   INITIAL_WISHES,
+  DIGITAL_ACCOUNTS,
 } from './data/initialData';
 
 import { Wish } from './types';
 
 export default function App() {
+  console.log('[DEBUG] App.tsx LOADED');
+  console.log('[DEBUG] DIGITAL_ACCOUNTS =', DIGITAL_ACCOUNTS);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const [guestName, setGuestName] = useState('Tamu Undangan');
@@ -166,6 +171,10 @@ export default function App() {
         <MapSection />
 
         <CountdownSection />
+
+        <DigitalGiftSection
+         accounts={DIGITAL_ACCOUNTS}
+        />
 
         <RsvpSection
           wishes={wishes}

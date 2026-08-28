@@ -1,4 +1,15 @@
 import { Profile, GalleryItem, Wish } from '../types';
+import { DigitalAccount } from '../components/DigitalGiftSection';
+
+export const DIGITAL_ACCOUNTS: DigitalAccount[] = [
+  {
+    id: 'bca',
+    bank: 'BCA',
+    accountNumber: '1234567890',
+    accountName: 'I Made Suryasa',
+  },
+];
+
 export const PROFILES = [
   {
     id: 'putu',
