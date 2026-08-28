@@ -25,8 +25,8 @@ export const EventInfoSection: React.FC = () => {
         relative
         overflow-visible
         bg-gradient-to-b
-        from-[#f5efe6]
-        via-[#e8e0d2]
+        from-[#28402F]
+        via-[#5C1A1F]
         to-[#28402F]
         px-6
         py-24
@@ -194,46 +194,46 @@ export const EventInfoSection: React.FC = () => {
       ========================== */}
 
       <div className="relative z-30 mx-auto max-w-4xl text-center reveal active">
-        <p className="mb-12 font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-primary">
+        <p className="mb-12 font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-ivory">
           WAKTU &amp; TEMPAT
         </p>
 
         <div className="mb-16 grid items-center gap-12 md:grid-cols-3">
           {/* TANGGAL */}
           <div className="p-4">
-            <Calendar className="mx-auto mb-3 h-5 w-5 text-primary" />
+            <Calendar className="mx-auto mb-3 h-5 w-5 text-ivory" />
 
-            <p className="mb-1 font-serif text-2xl text-charcoal">
+            <p className="mb-1 font-serif text-2xl text-white">
               M I N G G U
             </p>
 
-            <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-gray-500">
+            <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">
               27 JULI 2026
             </p>
           </div>
 
           {/* WAKTU */}
-          <div className="border-y border-gray-300/60 p-4 py-8 md:border-x md:border-y-0 md:py-4">
-            <Clock className="mx-auto mb-3 h-5 w-5 text-primary" />
+          <div className="border-y border-white/30 p-4 py-8 md:border-x md:border-y-0 md:py-4">
+            <Clock className="mx-auto mb-3 h-5 w-5 text-ivory" />
 
-            <p className="mb-2 font-serif text-5xl font-light leading-none text-primary md:text-6xl">
+            <p className="mb-2 font-serif text-5xl font-light leading-none text-ivory md:text-6xl">
               09:00
             </p>
 
-            <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-gray-500">
+            <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">
               WITA - SELESAI
             </p>
           </div>
 
           {/* LOKASI */}
           <div className="p-4">
-            <MapPin className="mx-auto mb-3 h-5 w-5 text-primary" />
+            <MapPin className="mx-auto mb-3 h-5 w-5 text-ivory" />
 
-            <p className="mb-1 font-serif text-2xl text-charcoal">
+            <p className="mb-1 font-serif text-2xl text-white">
               JERO DUSAK
             </p>
 
-            <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-gray-500">
+            <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">
               GIANYAR, BALI
             </p>
           </div>
@@ -250,18 +250,18 @@ export const EventInfoSection: React.FC = () => {
               items-center
               gap-2
               border
-              border-primary
+              border-white
               px-6
               py-3
               font-sans
               text-[10px]
               uppercase
               tracking-[0.2em]
-              text-primary
+              text-white
               transition-all
               duration-300
-              hover:bg-primary
-              hover:text-white
+              hover:bg-ivory
+              hover:text-primary
             "
           >
             <Calendar className="h-4 w-4" />
@@ -276,17 +276,17 @@ export const EventInfoSection: React.FC = () => {
               items-center
               gap-2
               border
-              border-charcoal/30
+              border-white/70
               px-6
               py-3
               font-sans
               text-[10px]
               uppercase
               tracking-[0.2em]
-              text-charcoal
+              text-white
               transition-all
               duration-300
-              hover:bg-charcoal
+              hover:bg-charcoal/80
               hover:text-white
             "
           >

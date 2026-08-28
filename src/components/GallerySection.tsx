@@ -19,7 +19,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         bg-gradient-to-b
         from-[#5C1A1F]
         via-[#6b2a2f]
-        to-[#f5efe6]
+        to-[#28402F]
         px-6
         py-24
       "

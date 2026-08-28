@@ -55,239 +55,28 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
       className="
         relative
         overflow-visible
-        bg-cream
+        bg-gradient-to-b
+        from-[#28402F]
+        via-[#542a2d]
+        to-[#5C1A1F]
         px-6
         py-24
         border-b
         border-gray-100
       "
     >
-      {/* =========================
-          FLORAL FRAME
-      ========================== */}
-
-      {/* KIRI TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          top-[-12%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KANAN TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          top-[-12%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          scale-x-[-1]
-          object-contain
-          object-left
-        "
-      />
-      {/* KIRI TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          top-[5%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KANAN TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          top-[5%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          scale-x-[-1]
-          object-contain
-          object-left
-        "
-      />
-      {/* KIRI TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          top-[22%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KANAN TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          top-[22%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          scale-x-[-1]
-          object-contain
-          object-left
-        "
-      />
-      {/* KIRI TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          top-[39%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KANAN TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          top-[39%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          scale-x-[-1]
-          object-contain
-          object-left
-        "
-      />
-      {/* KIRI TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          bottom-[23%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KANAN TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          bottom-[23%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          scale-x-[-1]
-          object-contain
-          object-left
-        "
-      />
-      {/* KIRI TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          bottom-[6%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KANAN TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          bottom-[6%]
-          z-20
-          h-[21%]
-          w-auto
-          select-none
-          scale-x-[-1]
-          object-contain
-          object-left
-        "
-      />
 
       {/* =========================
           CONTENT
       ========================== */}
 
-      <div className="relative z-30 mx-auto max-w-xl text-center">
+      <div className="relative z-30 mx-auto max-w-2xl rounded-sm border border-ivory/25 bg-charcoal/75 p-6 text-center shadow-2xl backdrop-blur-sm md:p-12">
         <div className="reveal active mb-16">
-          <h2 className="mb-4 font-serif text-3xl italic text-charcoal md:text-4xl">
+          <h2 className="mb-4 font-serif text-3xl italic text-white md:text-4xl">
             Terima Kasih
           </h2>
 
-          <p className="font-light text-sm leading-relaxed text-gray-600">
+          <p className="font-light text-sm leading-relaxed text-white/80">
             Merupakan suatu kehormatan bagi kami atas kehadiran
             Bapak/Ibu/Saudara/i.
           </p>
@@ -318,7 +107,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
         >
           {/* NAMA */}
           <div>
-            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-gray-500">
+            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-white/75">
               NAMA LENGKAP *
             </label>
 
@@ -332,16 +121,16 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
                 w-full
                 border-0
                 border-b
-                border-primary/40
+                border-white/50
                 bg-transparent
                 py-3
                 font-sans
                 text-xs
                 tracking-[0.1em]
-                text-charcoal
-                placeholder:text-gray-400
+                text-white
+                placeholder:text-white/50
                 transition-colors
-                focus:border-primary
+                focus:border-white
                 focus:ring-0
               "
             />
@@ -349,7 +138,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
 
           {/* KONFIRMASI */}
           <div>
-            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-gray-500">
+            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-white/75">
               KONFIRMASI KEHADIRAN *
             </label>
 
@@ -366,15 +155,15 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
                 cursor-pointer
                 border-0
                 border-b
-                border-primary/40
+                border-white/50
                 bg-transparent
                 py-3
                 font-sans
                 text-xs
                 tracking-[0.1em]
-                text-charcoal
+                text-white
                 transition-colors
-                focus:border-primary
+                focus:border-white
                 focus:ring-0
               "
             >
@@ -398,7 +187,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           {/* JUMLAH TAMU */}
           {attendance === 'hadir' && (
             <div>
-              <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-gray-500">
+              <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-white/75">
                 JUMLAH TAMU *
               </label>
 
@@ -413,15 +202,15 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
                   w-full
                   border-0
                   border-b
-                  border-primary/40
+                  border-white/50
                   bg-transparent
                   py-3
                   font-sans
                   text-xs
                   tracking-[0.1em]
-                  text-charcoal
+                  text-white
                   transition-colors
-                  focus:border-primary
+                  focus:border-white
                   focus:ring-0
                 "
               />
@@ -430,7 +219,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
 
           {/* UCAPAN */}
           <div>
-            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-gray-500">
+            <label className="mb-1 block font-sans text-[9px] uppercase tracking-[0.2em] text-white/75">
               UCAPAN &amp; DOA RESTU *
             </label>
 
@@ -445,16 +234,16 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
                 resize-none
                 border-0
                 border-b
-                border-primary/40
+                border-white/50
                 bg-transparent
                 py-3
                 font-sans
                 text-xs
                 tracking-[0.1em]
-                text-charcoal
-                placeholder:text-gray-400
+                text-white
+                placeholder:text-white/50
                 transition-colors
-                focus:border-primary
+                focus:border-white
                 focus:ring-0
               "
             />
@@ -493,13 +282,13 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
         ========================== */}
 
         <div className="mt-24 text-left">
-          <div className="mb-8 flex items-center justify-between border-b border-primary/20 pb-3">
-            <h3 className="flex items-center gap-2 font-sans text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
+          <div className="mb-8 flex items-center justify-between border-b border-white/30 pb-3">
+            <h3 className="flex items-center gap-2 font-sans text-[10px] font-semibold uppercase tracking-[0.3em] text-white">
               <MessageSquare className="h-4 w-4" />
               Ucapan Tamu ({wishes.length})
             </h3>
 
-            <span className="font-sans text-[10px] text-gray-400">
+            <span className="font-sans text-[10px] text-white/70">
               {
                 wishes.filter(
                   (w) => w.attendance === 'hadir'

@@ -7,81 +7,23 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
   return (
-    <footer className="relative overflow-visible bg-white px-6 py-12 text-center border-t border-gray-100">
-
-      {/* =========================
-          FLORAL FRAME - KIRI BAWAH
-      ========================== */}
-      <img
-        src="/assets/floral-kiri-bawah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          bottom-[-6%]
-          left-[-1%]
-          z-20
-          w-[40%]
-          select-none
-        "
-      />
-      <img
-        src="/assets/floral-kiri-bawah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          bottom-[-6%]
-          right-[-1%]
-          z-20
-          w-[40%]
-          select-none
-          scale-x-[-1]
-        "
-      />
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          bottom-[50%]
-          left-[-1%]
-          z-20
-          w-[15%]
-          select-none
-        "
-      />
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          bottom-[50%]
-          right-[-1%]
-          z-20
-          w-[15%]
-          select-none
-          scale-x-[-1]
-        "
-      />
+    <footer className="relative overflow-visible border-t border-gray-100 bg-gradient-to-b from-[#5C1A1F] via-[#542a2d] to-[#28402F] px-6 py-12 text-center">
 
       {/* CONTENT */}
       <div className="relative z-30 reveal active flex flex-col items-center">
         <button
           onClick={onOpenLinkGenerator}
-          className="mb-8 px-4 py-2 border border-primary/40 text-primary font-sans text-[9px] tracking-[0.2em] uppercase hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2 rounded-xs cursor-pointer"
+          className="mb-8 flex cursor-pointer items-center gap-2 rounded-xs border border-ivory bg-ivory px-4 py-2 font-sans text-[9px] font-semibold uppercase tracking-[0.2em] text-primary shadow-lg transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white"
         >
           <Share2 className="w-3.5 h-3.5" />
           BAGIKAN UNDANGAN INI
         </button>
 
-        <p className="font-sans text-[8px] tracking-[0.4em] text-gray-400 mb-2 uppercase">
+        <p className="mb-2 font-sans text-[8px] uppercase tracking-[0.4em] text-white/80">
           CREATED BY MAITEKA
         </p>
 
-        <p className="font-sans text-[8px] tracking-[0.2em] text-gray-300">
+        <p className="font-sans text-[8px] tracking-[0.2em] text-white/60">
           © 2026 MEPANDES CEREMONY
         </p>
       </div>

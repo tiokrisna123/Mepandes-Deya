@@ -59,94 +59,23 @@ export const CountdownSection: React.FC = () => {
       className="
         relative
         overflow-visible
-        bg-charcoal
+        bg-gradient-to-b
+        from-[#5C1A1F]
+        via-[#542a2d]
+        to-[#28402F]
         px-6
-        py-24
+        py-16
+        md:py-20
         text-center
         text-white
       "
     >
       {/* =========================
-          FLORAL FRAME
-      ========================== */}
-
-      {/* KIRI TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          top-[-63%]
-          z-20
-          h-[72%]
-          w-auto
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KANAN TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          top-[-63%]
-          z-20
-          h-[72%]
-          w-auto
-          scale-x-[-1]
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KIRI TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          top-[-4%]
-          z-20
-          h-[72%]
-          w-auto
-          select-none
-          object-contain
-          object-left
-        "
-      />
-      {/* KANAN TENGAH ATAS */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          top-[-4%]
-          z-20
-          h-[72%]
-          w-auto
-          scale-x-[-1]
-          select-none
-          object-contain
-          object-left
-        "
-      />
-
-      {/* =========================
           CONTENT
       ========================== */}
 
-      <div className="relative z-30 mx-auto max-w-4xl reveal active">
-        <p className="mb-12 font-sans text-[10px] font-semibold uppercase tracking-[0.4em] opacity-60">
+      <div className="relative z-30 mx-auto w-[95%] max-w-xl rounded-sm border border-primary/20 bg-gradient-to-br from-charcoal via-[#432326] to-primary p-4 shadow-2xl reveal active md:p-12">
+        <p className="mb-8 font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-white/75 md:mb-12">
           HITUNG MUNDUR
         </p>
 
@@ -155,45 +84,45 @@ export const CountdownSection: React.FC = () => {
           id="countdown"
         >
           {/* HARI */}
-          <div className="rounded-xs border border-white/10 bg-white/5 p-4 md:p-6">
+          <div className="rounded-xs border border-ivory/80 bg-ivory p-4 shadow-xl md:p-6">
             <p className="mb-2 font-serif text-3xl font-light text-primary md:text-6xl">
               {timeLeft.days.toString().padStart(2, '0')}
             </p>
 
-            <p className="font-sans text-[9px] font-medium tracking-[0.2em] opacity-50">
+            <p className="font-sans text-[9px] font-semibold tracking-[0.2em] text-charcoal/60">
               HARI
             </p>
           </div>
 
           {/* JAM */}
-          <div className="rounded-xs border border-white/10 bg-white/5 p-4 md:p-6">
+          <div className="rounded-xs border border-ivory/80 bg-ivory p-4 shadow-xl md:p-6">
             <p className="mb-2 font-serif text-3xl font-light text-primary md:text-6xl">
               {timeLeft.hours.toString().padStart(2, '0')}
             </p>
 
-            <p className="font-sans text-[9px] font-medium tracking-[0.2em] opacity-50">
+            <p className="font-sans text-[9px] font-semibold tracking-[0.2em] text-charcoal/60">
               JAM
             </p>
           </div>
 
           {/* MENIT */}
-          <div className="rounded-xs border border-white/10 bg-white/5 p-4 md:p-6">
+          <div className="rounded-xs border border-ivory/80 bg-ivory p-4 shadow-xl md:p-6">
             <p className="mb-2 font-serif text-3xl font-light text-primary md:text-6xl">
               {timeLeft.minutes.toString().padStart(2, '0')}
             </p>
 
-            <p className="font-sans text-[9px] font-medium tracking-[0.2em] opacity-50">
+            <p className="font-sans text-[9px] font-semibold tracking-[0.2em] text-charcoal/60">
               MENIT
             </p>
           </div>
 
           {/* DETIK */}
-          <div className="rounded-xs border border-white/10 bg-white/5 p-4 md:p-6">
+          <div className="rounded-xs border border-ivory/80 bg-ivory p-4 shadow-xl md:p-6">
             <p className="mb-2 font-serif text-3xl font-light text-primary md:text-6xl">
               {timeLeft.seconds.toString().padStart(2, '0')}
             </p>
 
-            <p className="font-sans text-[9px] font-medium tracking-[0.2em] opacity-50">
+            <p className="font-sans text-[9px] font-semibold tracking-[0.2em] text-charcoal/60">
               DETIK
             </p>
           </div>
