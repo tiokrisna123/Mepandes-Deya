@@ -37,7 +37,7 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[-63%]
+          top-[-93%]
           z-20
           h-[59%]
           w-auto
@@ -55,7 +55,7 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[-63%]
+          top-[-93%]
           z-20
           h-[59%]
           w-auto
@@ -74,7 +74,7 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[-14%]
+          top-[-45%]
           z-20
           h-[59%]
           w-auto
@@ -92,7 +92,7 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[-14%]
+          top-[-45%]
           z-20
           h-[59%]
           w-auto
@@ -111,7 +111,7 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[34%]
+          bottom-[37%]
           z-20
           h-[59%]
           w-auto
@@ -129,7 +129,7 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[34%]
+          bottom-[37%]
           z-20
           h-[59%]
           w-auto

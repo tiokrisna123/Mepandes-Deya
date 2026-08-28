@@ -45,7 +45,7 @@ export const EventInfoSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[-24%]
+          top-[-38%]
           z-20
           h-[28%]
           w-auto
@@ -63,7 +63,7 @@ export const EventInfoSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[-24%]
+          top-[-38%]
           z-20
           h-[28%]
           w-auto
@@ -82,7 +82,7 @@ export const EventInfoSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[-1%]
+          top-[-15%]
           z-20
           h-[28%]
           w-auto
@@ -100,7 +100,7 @@ export const EventInfoSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[-1%]
+          top-[-15%]
           z-20
           h-[28%]
           w-auto
@@ -119,7 +119,7 @@ export const EventInfoSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[8%]
+          top-[-6%]
           z-20
           h-[28%]
           w-auto
@@ -138,7 +138,7 @@ export const EventInfoSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[8%]
+          top-[-6%]
           z-20
           h-[28%]
           w-auto
@@ -158,7 +158,7 @@ export const EventInfoSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          bottom-[41%]
+          bottom-[55%]
           z-20
           h-[28%]
           w-auto
@@ -177,7 +177,7 @@ export const EventInfoSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          bottom-[41%]
+          bottom-[55%]
           z-20
           h-[28%]
           w-auto

@@ -74,7 +74,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[-0%]
+          top-[-12%]
           z-20
           h-[21%]
           w-auto
@@ -91,7 +91,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[-0%]
+          top-[-12%]
           z-20
           h-[21%]
           w-auto
@@ -109,7 +109,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[17.5%]
+          top-[5%]
           z-20
           h-[21%]
           w-auto
@@ -126,7 +126,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[17.5%]
+          top-[5%]
           z-20
           h-[21%]
           w-auto
@@ -144,7 +144,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[35%]
+          top-[22%]
           z-20
           h-[21%]
           w-auto
@@ -161,7 +161,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[35%]
+          top-[22%]
           z-20
           h-[21%]
           w-auto
@@ -179,7 +179,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[52.5%]
+          top-[39%]
           z-20
           h-[21%]
           w-auto
@@ -196,7 +196,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[52.5%]
+          top-[39%]
           z-20
           h-[21%]
           w-auto
@@ -214,7 +214,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          bottom-[9%]
+          bottom-[23%]
           z-20
           h-[21%]
           w-auto
@@ -231,7 +231,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          bottom-[9%]
+          bottom-[23%]
           z-20
           h-[21%]
           w-auto
@@ -249,7 +249,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          bottom-[-7%]
+          bottom-[6%]
           z-20
           h-[21%]
           w-auto
@@ -266,7 +266,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          bottom-[-7%]
+          bottom-[6%]
           z-20
           h-[21%]
           w-auto

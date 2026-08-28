@@ -75,7 +75,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[8%]
+          top-[7%]
           z-20
           h-[15%]
           w-auto
@@ -94,7 +94,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[8%]
+          top-[7%]
           z-20
           h-[15%]
           w-auto
@@ -114,7 +114,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[23%]
+          top-[19%]
           z-20
           h-[15%]
           w-auto
@@ -133,7 +133,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[23%]
+          top-[19%]
           z-20
           h-[15%]
           w-auto
@@ -153,7 +153,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[38%]
+          top-[31%]
           z-20
           h-[15%]
           w-auto
@@ -172,7 +172,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[38%]
+          top-[31%]
           z-20
           h-[15%]
           w-auto
@@ -192,7 +192,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[53%]
+          top-[43%]
           z-20
           h-[15%]
           w-auto
@@ -211,7 +211,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[53%]
+          top-[43%]
           z-20
           h-[15%]
           w-auto
@@ -231,7 +231,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          bottom-[14%]
+          bottom-[30%]
           z-20
           h-[15%]
           w-auto
@@ -250,7 +250,44 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          bottom-[14%]
+          bottom-[30%]
+          z-20
+          h-[15%]
+          w-auto
+          translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI TENGAH BAWAH */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          bottom-[18%]
+          z-20
+          h-[15%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH BAWAH */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          bottom-[18%]
           z-20
           h-[15%]
           w-auto

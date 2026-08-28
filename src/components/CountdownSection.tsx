@@ -78,7 +78,7 @@ export const CountdownSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[-20%]
+          top-[-63%]
           z-20
           h-[72%]
           w-auto
@@ -95,7 +95,7 @@ export const CountdownSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[-20%]
+          top-[-63%]
           z-20
           h-[72%]
           w-auto
@@ -113,7 +113,7 @@ export const CountdownSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[40%]
+          top-[-4%]
           z-20
           h-[72%]
           w-auto
@@ -130,7 +130,7 @@ export const CountdownSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[40%]
+          top-[-4%]
           z-20
           h-[72%]
           w-auto

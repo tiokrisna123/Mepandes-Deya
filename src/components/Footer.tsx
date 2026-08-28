@@ -39,6 +39,33 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
           scale-x-[-1]
         "
       />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          bottom-[50%]
+          left-[-1%]
+          z-20
+          w-[15%]
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          bottom-[50%]
+          right-[-1%]
+          z-20
+          w-[15%]
+          select-none
+          scale-x-[-1]
+        "
+      />
 
       {/* CONTENT */}
       <div className="relative z-30 reveal active flex flex-col items-center">
