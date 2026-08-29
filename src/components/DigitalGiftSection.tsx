@@ -38,10 +38,10 @@ export function DigitalGiftSection({
   return (
     <section
       id="digital-gift"
-      className="relative overflow-hidden bg-cream px-6 py-20 md:px-10 md:py-28"
+      className="relative overflow-hidden bg-gradient-to-b from-[#28402F] via-[#5C1A1F] to-[#28402F] px-6 py-20 text-white md:px-10 md:py-28"
     >
       {/* Decorative elements */}
-      <div className="pointer-events-none absolute -left-24 top-20 h-48 w-48 rounded-full bg-primary/5 blur-3xl" />
+      <div className="pointer-events-none absolute -left-24 top-20 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-10 h-56 w-56 rounded-full bg-gold/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-3xl">
@@ -51,13 +51,13 @@ export function DigitalGiftSection({
             Digital Gift
           </p>
 
-          <h2 className="font-serif text-3xl text-primary md:text-4xl">
+          <h2 className="font-serif text-3xl text-white md:text-4xl">
             Kirim Hadiah
           </h2>
 
           <div className="mx-auto mt-5 h-px w-16 bg-gold/60" />
 
-          <p className="mx-auto mt-6 max-w-xl font-sans text-sm leading-7 text-charcoal/70 md:text-base">
+          <p className="mx-auto mt-6 max-w-xl font-sans text-sm leading-7 text-white/80 md:text-base">
             Doa dan kehadiran Anda merupakan hadiah terindah bagi kami.
             Namun apabila ingin memberikan tanda kasih, Anda dapat
             mengirimkannya melalui rekening digital berikut.
@@ -185,7 +185,7 @@ export function DigitalGiftSection({
 
         {/* Closing message */}
         <div className="mt-10 text-center">
-          <p className="font-serif text-lg italic text-primary/80">
+          <p className="font-serif text-lg italic text-white/85">
             &ldquo;Terima kasih atas doa dan tanda kasih yang diberikan.&rdquo;
           </p>
         </div>
