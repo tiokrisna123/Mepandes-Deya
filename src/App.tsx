@@ -19,7 +19,7 @@ import {
   GALLERY_ITEMS,
   INITIAL_WISHES,
   DIGITAL_ACCOUNTS,
-} from './data/initialData';
+} from './data/deyaData';
 
 import { Wish } from './types';
 
