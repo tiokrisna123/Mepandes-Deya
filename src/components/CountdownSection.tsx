@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 export const CountdownSection: React.FC = () => {
-  const targetDate = new Date('2026-07-27T09:00:00+08:00').getTime();
+  const targetDate = new Date('2026-09-16T11:00:00+08:00').getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -59,10 +59,7 @@ export const CountdownSection: React.FC = () => {
       className="
         relative
         overflow-visible
-        bg-gradient-to-b
-        from-[#5C1A1F]
-        via-[#542a2d]
-        to-[#28402F]
+        bg-background
         px-6
         py-16
         md:py-20

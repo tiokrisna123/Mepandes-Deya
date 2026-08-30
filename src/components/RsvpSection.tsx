@@ -55,10 +55,7 @@ export const RsvpSection: React.FC<RsvpSectionProps> = ({
       className="
         relative
         overflow-visible
-        bg-gradient-to-b
-        from-[#28402F]
-        via-[#542a2d]
-        to-[#5C1A1F]
+        bg-background
         px-6
         py-24
         border-b

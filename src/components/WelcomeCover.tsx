@@ -25,10 +25,13 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
       ========================== */}
       <div className="absolute inset-0 z-0 overflow-hidden bg-gradient-to-b from-[#28402F] via-[#1d3024] to-[#5C1A1F]">
         <img
-          src="/assets/foto-deya-berdua.jpeg"
+          src="/assets/foto-deya-bertiga.JPG"
           alt="Mepandes Ceremony Cover"
-          className="h-full w-full object-cover scale-[0.90]"
-        />
+           className="h-full w-full object-cover"
+  style={{
+    objectPosition: '60% 60%',
+  }}
+/>
 
         {/* Overlay dasar */}
         <div className="absolute inset-0 bg-black/0" />
@@ -68,7 +71,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
       />
 
       {/* KANAN ATAS */}
-      <img
+     <img 
         src="/assets/floral-kiri-atas.png"
         alt=""
         className="
@@ -82,7 +85,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
           select-none
         "
       />
-
+      
       {/* KIRI BAWAH */}
       <img
         src="/assets/floral-kiri-bawah.png"
@@ -115,7 +118,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
       />
 
       {/* FLORAL TENGAH KIRI */}
-      <img
+      {/* <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
         className="
@@ -131,10 +134,10 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
           object-left
           select-none
         "
-      />
+      /> */}
 
       {/* FLORAL TENGAH KANAN */}
-      <img
+      {/*<img
         src="/assets/floral-kiri-tengah.png"
         alt=""
         className="
@@ -151,7 +154,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
           object-left
           select-none
         "
-      />
+      /> */}
 
       {/* =========================
           CONTENT ATAS
@@ -181,24 +184,17 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
             textShadow: '0 8px 20px rgba(0,0,0,1)',
           }}
         >
-          Deya Indriyani &
+          Alya Febriayu &
           <br />
-          Kakak Deya
+           Deya Indriyani
         </h2>
 
         <div className="mt-0 flex items-center justify-center gap-4">
-          <div className="h-px w-10 bg-amber-200" />
+          
 
-          <p
-            className="mt-2 font-sans text-base font-medium tracking-[0.3em] text-amber-200"
-            style={{
-              textShadow: '0 2px 6px rgba(0,0,0,.8)',
-            }}
-          >
-            20 . 08 . 2026
-          </p>
+          
+         
 
-          <div className="h-px w-10 bg-amber-200" />
         </div>
       </div>
 

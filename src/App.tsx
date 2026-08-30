@@ -10,7 +10,6 @@ import { CountdownSection } from './components/CountdownSection';
 import { RsvpSection } from './components/RsvpSection';
 import { AudioPlayer } from './components/AudioPlayer';
 import { LightboxModal } from './components/LightboxModal';
-import { LinkGeneratorModal } from './components/LinkGeneratorModal';
 import { Footer } from './components/Footer';
 import { DigitalGiftSection } from './components/DigitalGiftSection';
 
@@ -201,13 +200,7 @@ export default function App() {
       />
 
       {/* Shareable Link Generator Modal */}
-      <LinkGeneratorModal
-        isOpen={isLinkGenOpen}
-        onClose={() =>
-          setIsLinkGenOpen(false)
-        }
-        currentGuest={guestName}
-      />
+      
 
     </div>
   );

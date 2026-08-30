@@ -2,7 +2,7 @@ import React from 'react';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-[#28402F] via-[#1d3024] to-[#5C1A1F]">
+    <section className="relative h-screen w-full overflow-hidden bg-[#231512]">
 
       {/* =========================
           BACKGROUND FOTO

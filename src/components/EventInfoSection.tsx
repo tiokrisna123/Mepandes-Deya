@@ -24,10 +24,7 @@ export const EventInfoSection: React.FC = () => {
       className="
         relative
         overflow-visible
-        bg-gradient-to-b
-        from-[#28402F]
-        via-[#5C1A1F]
-        to-[#28402F]
+        bg-background
         px-6
         py-24
       "
@@ -204,11 +201,11 @@ export const EventInfoSection: React.FC = () => {
             <Calendar className="mx-auto mb-3 h-5 w-5 text-ivory" />
 
             <p className="mb-1 font-serif text-2xl text-white">
-              M I N G G U
+              R A B U
             </p>
 
             <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">
-              27 JULI 2026
+              16 September 2026
             </p>
           </div>
 
@@ -217,7 +214,7 @@ export const EventInfoSection: React.FC = () => {
             <Clock className="mx-auto mb-3 h-5 w-5 text-ivory" />
 
             <p className="mb-2 font-serif text-5xl font-light leading-none text-ivory md:text-6xl">
-              09:00
+              11.00
             </p>
 
             <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">
@@ -230,11 +227,11 @@ export const EventInfoSection: React.FC = () => {
             <MapPin className="mx-auto mb-3 h-5 w-5 text-ivory" />
 
             <p className="mb-1 font-serif text-2xl text-white">
-              JERO DUSAK
+              Kedewatan
             </p>
 
             <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">
-              GIANYAR, BALI
+              Jl, Raya Kedewatan 1 No. 9
             </p>
           </div>
         </div>

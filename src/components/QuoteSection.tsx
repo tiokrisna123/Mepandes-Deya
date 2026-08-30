@@ -8,10 +8,7 @@ export const QuoteSection: React.FC = () => {
         relative
         -mt-[1px]
         overflow-visible
-        bg-gradient-to-b
-        from-[#5C1A1F]
-        via-[#3d171d]
-        to-[#28402F]
+       bg-background
         px-6
         py-24
         text-center

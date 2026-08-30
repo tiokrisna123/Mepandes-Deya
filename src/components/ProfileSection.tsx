@@ -15,13 +15,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
       className="
         relative
         overflow-visible
-        bg-gradient-to-b
-        from-[#28402F]
-        via-[#26382E]
-        via-[20%]
-        via-[#3d171d]
-        via-[55%]
-        to-[#5C1A1F]
+        bg-[#231512]
         px-6
         py-24
       "
@@ -308,7 +302,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           PUTRA PUTRI KAMI
         </p>
 
-        <h2 className="mb-16 text-center font-serif text-2xl uppercase tracking-widest text-cream md:text-3xl">
+        <h2 className="mb-16 text-center font-serif text-2xl uppercase tracking-widest text-white md:text-3xl">
           Sang Saskara
         </h2>
 
@@ -359,7 +353,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
               </div>
 
               {/* NAMA */}
-              <p className="mb-1 text-center font-serif text-2xl font-medium italic leading-tight text-cream">
+              <p className="mb-1 text-center font-serif text-2xl font-medium italic leading-tight text-white">
                 {person.id === 'nyoman' ? (
                   <>
                     Komang Resya

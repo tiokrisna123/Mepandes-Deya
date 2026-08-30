@@ -16,10 +16,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       className="
         relative
         overflow-visible
-        bg-gradient-to-b
-        from-[#5C1A1F]
-        via-[#6b2a2f]
-        to-[#28402F]
+        bg-background
         px-6
         py-24
       "

@@ -4,9 +4,9 @@ import { DigitalAccount } from '../components/DigitalGiftSection';
 export const DIGITAL_ACCOUNTS: DigitalAccount[] = [
   {
     id: 'bca',
-    bank: 'BCA',
-    accountNumber: '1234567890',
-    accountName: 'I Made Suryasa',
+    bank: 'BRI',
+    accountNumber: '465501014723523',
+    accountName: 'Wayan Alya Febriayu',
   },
 ];
 
