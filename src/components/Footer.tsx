@@ -7,7 +7,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
   return (
-    <footer className="relative overflow-visible border-t border-gray-100 bg-gradient-to-b from-[#5C1A1F] via-[#542a2d] to-[#28402F] px-6 py-12 text-center">
+    <footer className="relative overflow-hidden bg-background px-6 py-20 text-white md:px-10 md:py-28">
 
       {/* CONTENT */}
       <div className="relative z-30 reveal active flex flex-col items-center">

@@ -214,7 +214,7 @@ export const EventInfoSection: React.FC = () => {
             <Clock className="mx-auto mb-3 h-5 w-5 text-ivory" />
 
             <p className="mb-2 font-serif text-5xl font-light leading-none text-ivory md:text-6xl">
-              11.00
+              11:00
             </p>
 
             <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">

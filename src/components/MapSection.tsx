@@ -4,6 +4,127 @@ import { MapPin } from 'lucide-react';
 export const MapSection: React.FC = () => {
   return (
     <section className="relative overflow-visible bg-background px-6 py-24 reveal active">
+      {/* =========================
+          FLORAL FRAME
+      ========================== */}
+
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[-20%]
+          z-20
+          h-[55%]
+          w-auto
+          object-contain
+          object-left
+          select-none
+        "
+      />
+
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[-20%]
+          z-20
+          h-[55%]
+          w-auto
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+
+      {/* KIRI TENGAH */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[50%]
+          z-20
+          h-[55%]
+          w-auto
+          -translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+
+      {/* KANAN TENGAH */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[50%]
+          z-20
+          h-[55%]
+          w-auto
+          -translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+
+      {/* KIRI TENGAH BAWAH */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[90%]
+          z-20
+          h-[55%]
+          w-auto
+          -translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+
+      {/* KANAN TENGAH BAWAH */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[90%]
+          z-20
+          h-[55%]
+          w-auto
+          -translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+
 
       {/* =========================
           MAP CONTAINER
@@ -24,6 +145,8 @@ export const MapSection: React.FC = () => {
           style={{ border: 0 }}
           title="Lokasi Upacara Mepandes"
         />
+
+        
 
         {/* BUTTON GOOGLE MAPS */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
