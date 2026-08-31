@@ -21,6 +21,7 @@ import {
 } from './data/deyaData';
 
 import { Wish } from './types';
+import { supabase } from './lib/supabase';
 
 export default function App() {
   console.log('[DEBUG] App.tsx LOADED');
@@ -30,17 +31,7 @@ export default function App() {
 
   const [guestName, setGuestName] = useState('Tamu Undangan');
 
-  const [wishes, setWishes] = useState<Wish[]>(() => {
-    try {
-      const saved = localStorage.getItem('mepandes_wishes');
-
-      return saved
-        ? JSON.parse(saved)
-        : INITIAL_WISHES;
-    } catch {
-      return INITIAL_WISHES;
-    }
-  });
+ const [wishes, setWishes] = useState<Wish[]>(INITIAL_WISHES);
 
   const [lightboxImage, setLightboxImage] = useState<{
     src: string;
@@ -60,20 +51,58 @@ export default function App() {
     }
   }, []);
 
-  // Sync wishes to localStorage
-  useEffect(() => {
-    try {
-      localStorage.setItem(
-        'mepandes_wishes',
-        JSON.stringify(wishes)
+ // Load wishes dari Supabase
+useEffect(() => {
+  const loadWishes = async () => {
+    const { data, error } = await supabase
+      .from('rsvp')
+      .select('*')
+      .order('created_at', {
+        ascending: false,
+      });
+
+    if (error) {
+      console.error(
+        'Gagal mengambil RSVP:',
+        error
       );
-    } catch (e) {
-      console.warn(
-        'Failed to persist wishes:',
-        e
-      );
+      return;
     }
-  }, [wishes]);
+
+    if (!data) return;
+
+    const formattedWishes: Wish[] = data.map(
+      (item) => ({
+        id: String(item.id),
+
+        name: item.nama,
+
+        attendance:
+          item.hadir === 'hadir'
+            ? 'hadir'
+            : 'tidak_hadir',
+
+        guestCount:
+          item.jumlah_tamu ?? 0,
+
+        message:
+          item.ucapan ?? '',
+
+        timestamp: new Date(
+          item.created_at
+        ).toLocaleDateString('id-ID', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+        }),
+      })
+    );
+
+    setWishes(formattedWishes);
+  };
+
+  loadWishes();
+}, []);
 
   // Handle reveal animation
   useEffect(() => {
