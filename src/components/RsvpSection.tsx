@@ -167,6 +167,200 @@ alert('RSVP berhasil disimpan!');
     >
 
       {/* =========================
+          FLORAL FRAME
+      ========================== */}
+
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[11%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[11%]
+          z-20
+          h-[20%]
+          w-auto
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[27%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[27%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          scale-x-[-1]
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[43%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[43%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          scale-x-[-1]
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[49%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[49%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          scale-x-[-1]
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[65%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[65%]
+          z-20
+          h-[20%]
+          w-auto
+          object-contain
+          scale-x-[-1]
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+
+      {/* =========================
           CONTENT
       ========================== */}
 

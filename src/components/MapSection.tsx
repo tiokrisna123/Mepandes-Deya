@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 
 export const MapSection: React.FC = () => {
   return (
-    <section className="relative overflow-visible bg-background px-6 py-24 reveal active">
+    <section className="relative overflow-visible bg-background px-8 py-16 reveal active">
       {/* =========================
           FLORAL FRAME
       ========================== */}
@@ -17,16 +17,15 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[-20%]
+          top-[0%]
           z-20
-          h-[55%]
+          h-[43%]
           w-auto
           object-contain
           object-left
           select-none
         "
       />
-
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
@@ -36,18 +35,18 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[-20%]
+          top-[-0%]
           z-20
-          h-[55%]
+          h-[43%]
           w-auto
-          scale-x-[-1]
           object-contain
+          scale-x-[-1]
           object-left
           select-none
         "
       />
-
-      {/* KIRI TENGAH */}
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -55,18 +54,17 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[50%]
+          top-[35%]
           z-20
-          h-[55%]
+          h-[43%]
           w-auto
-          -translate-y-1/2
           object-contain
           object-left
           select-none
         "
       />
-
-      {/* KANAN TENGAH */}
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -74,19 +72,18 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[50%]
+          top-[35%]
           z-20
-          h-[55%]
+          h-[43%]
           w-auto
-          -translate-y-1/2
-          scale-x-[-1]
           object-contain
+          scale-x-[-1]
           object-left
           select-none
         "
       />
-
-      {/* KIRI TENGAH BAWAH */}
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -94,18 +91,18 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           left-0
-          top-[90%]
+          top-[49%]
           z-20
-          h-[55%]
+          h-[43%]
           w-auto
-          -translate-y-1/2
           object-contain
+          translate-y-1/2
           object-left
           select-none
         "
       />
-
-      {/* KANAN TENGAH BAWAH */}
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -113,13 +110,13 @@ export const MapSection: React.FC = () => {
           pointer-events-none
           absolute
           right-0
-          top-[90%]
+          top-[49%]
           z-20
-          h-[55%]
+          h-[43%]
           w-auto
-          -translate-y-1/2
-          scale-x-[-1]
           object-contain
+          scale-x-[-1]
+          translate-y-1/2
           object-left
           select-none
         "

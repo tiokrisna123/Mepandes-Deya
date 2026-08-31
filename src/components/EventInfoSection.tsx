@@ -185,6 +185,84 @@ export const EventInfoSection: React.FC = () => {
           select-none
         "
       />
+        {/* KIRI BAWAH
+          Sambungan dari Gallery Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          bottom-[32%]
+          z-20
+          h-[28%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+        {/* KANAN BAWAH
+          Sambungan dari Gallery Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          bottom-[32%]
+          z-20
+          h-[28%]
+          w-auto
+          translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+        {/* KIRI BAWAH
+          Sambungan dari Gallery Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          bottom-[9%]
+          z-20
+          h-[28%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+        {/* KANAN BAWAH
+          Sambungan dari Gallery Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          bottom-[9%]
+          z-20
+          h-[28%]
+          w-auto
+          translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
 
       {/* =========================
           CONTENT

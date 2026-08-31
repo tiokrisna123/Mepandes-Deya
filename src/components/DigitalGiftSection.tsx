@@ -38,13 +38,172 @@ export function DigitalGiftSection({
   return (
     <section
       id="digital-gift"
-      className="relative overflow-hidden bg-background px-6 py-20 text-white md:px-10 md:py-28"
+      className="relative overflow-visible bg-background px-6 py-20 text-white md:px-10 md:py-28"
     >
+      {/* =========================
+          FLORAL FRAME
+      ========================== */}
+
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[16%]
+          z-20
+          h-[30%]
+          w-auto
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[16%]
+          z-20
+          h-[30%]
+          w-auto
+          object-contain
+          scale-x-[-1]
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[26%]
+          z-20
+          h-[30%]
+          w-auto
+          object-contain
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[26%]
+          z-20
+          h-[30%]
+          w-auto
+          object-contain
+          scale-x-[-1]
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[51%]
+          z-20
+          h-[30%]
+          w-auto
+          object-contain
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[51%]
+          z-20
+          h-[30%]
+          w-auto
+          object-contain
+          scale-x-[-1]
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          bottom-[-6%]
+          z-20
+          h-[30%]
+          w-auto
+          object-contain
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          bottom-[-6%]
+          z-20
+          h-[30%]
+          w-auto
+          object-contain
+          scale-x-[-1]
+          translate-y-1/2
+          object-left
+          select-none
+        "
+      />
+
       {/* Decorative elements */}
       <div className="pointer-events-none absolute -left-24 top-20 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-10 h-56 w-56 rounded-full bg-gold/10 blur-3xl" />
 
-      <div className="relative mx-auto max-w-3xl">
+      <div className="relative z-30 mx-auto max-w-3xl">
         {/* Heading */}
         <div className="text-center">
           <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.35em] text-gold">
@@ -57,9 +216,11 @@ export function DigitalGiftSection({
 
           <div className="mx-auto mt-5 h-px w-16 bg-gold/60" />
 
-          <p className="mx-auto mt-6 max-w-xl font-sans text-sm leading-7 text-white/80 md:text-base">
-            Doa dan kehadiran Anda merupakan hadiah terindah bagi kami.
-            Namun apabila ingin memberikan tanda kasih, Anda dapat
+          <p className="mx-auto mt-6 max-w-md font-sans text-sm leading-7 text-white/80 md:text-base">
+            Doa dan kehadiran Anda merupakan<br />
+            hadiah terindah bagi kami.<br />
+            Namun apabila ingin memberikan ,<br />
+            tanda kasih. Anda dapat <br />
             mengirimkannya melalui rekening digital berikut.
           </p>
         </div>

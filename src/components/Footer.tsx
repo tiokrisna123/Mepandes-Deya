@@ -7,7 +7,86 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
   return (
-    <footer className="relative overflow-hidden bg-background px-6 py-20 text-white md:px-10 md:py-28">
+    <footer className="relative overflow-visible bg-background px-6 py-20 text-white md:px-10 md:py-28">
+
+      {/* =========================
+          FLORAL FRAME
+      ========================== */}
+
+      {/* KIRI TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[-55%]
+          z-20
+          h-[119%]
+          w-auto
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN TENGAH ATAS
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[-55%]
+          z-20
+          h-[119%]
+          w-auto
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KIRI BAWAH
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-bawah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-[-1%]
+          bottom-[-5%]
+          z-20
+          h-[119%]
+          w-auto
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      {/* KANAN BAWAH
+          Sambungan dari Hero Section */}
+      <img
+        src="/assets/floral-kiri-bawah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-[-1%]
+          bottom-[-5%]
+          z-20
+          h-[119%]
+          w-auto
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
 
       {/* CONTENT */}
       <div className="relative z-30 reveal active flex flex-col items-center">

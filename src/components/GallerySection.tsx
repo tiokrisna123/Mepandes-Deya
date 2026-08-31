@@ -25,8 +25,6 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           FLORAL FRAME
       ========================== */}
 
-      {/* KIRI ATAS
-          Sambungan dari Profile Section */}
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -34,17 +32,16 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[-30%]
+          top-[-14%]
           z-20
-          h-[35%]
+          h-[16%]
           w-auto
           object-contain
           object-left
           select-none
         "
       />
-      {/* KANAN ATAS
-          Sambungan dari Profile Section */}
+
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -52,9 +49,9 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[-30%]
+          top-[-14%]
           z-20
-          h-[35%]
+          h-[16%]
           w-auto
           scale-x-[-1]
           object-contain
@@ -62,8 +59,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           select-none
         "
       />
-      {/* KIRI ATAS
-          Sambungan dari Profile Section */}
+
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -71,9 +67,9 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           left-0
-          top-[-19%]
+          top-[-9%]
           z-20
-          h-[35%]
+          h-[16%]
           w-auto
           translate-y-1/2
           object-contain
@@ -81,8 +77,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           select-none
         "
       />
-      {/* KANAN ATAS
-          Sambungan dari Profile Section */}
+
       <img
         src="/assets/floral-kiri-tengah.png"
         alt=""
@@ -90,48 +85,9 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           pointer-events-none
           absolute
           right-0
-          top-[-19%]
+          top-[-9%]
           z-20
-          h-[35%]
-          w-auto
-          translate-y-1/2
-          scale-x-[-1]
-          object-contain
-          object-left
-          select-none
-        "
-      />
-      {/* KIRI BAWAH
-          Sambungan dari Profile Section */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          left-0
-          bottom-[55%]
-          z-20
-          h-[35%]
-          w-auto
-          translate-y-1/2
-          object-contain
-          object-left
-          select-none
-        "
-      />
-      {/* KANAN BAWAH
-          Sambungan dari Profile Section */}
-      <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
-        className="
-          pointer-events-none
-          absolute
-          right-0
-          bottom-[55%]
-          z-20
-          h-[35%]
+          h-[16%]
           w-auto
           translate-y-1/2
           scale-x-[-1]
@@ -141,12 +97,206 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
 
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[4%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[4%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[17%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[17%]
+          z-20
+          h-[16%]
+          w-auto
+          scale-x-[-1]
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[30%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[30%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[40%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[43%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[43%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-[57%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          object-contain
+          object-left
+          select-none
+        "
+      />
+      <img
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
+        className="
+          pointer-events-none
+          absolute
+          right-0
+          top-[57%]
+          z-20
+          h-[16%]
+          w-auto
+          translate-y-1/2
+          scale-x-[-1]
+          object-contain
+          object-left
+          select-none
+        "
+      />
 
       {/* =========================
           CONTENT
       ========================== */}
 
-      <div className="relative z-30 mx-auto max-w-5xl">
+      <div className="relative z-30 mx-auto max-w-6xl">
+
         <p
           className="
             mb-3
@@ -180,7 +330,12 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           Kenangan Suci
         </h2>
 
-        <div className="masonry">
+        {/* =========================
+            SYMMETRIC GALLERY
+        ========================== */}
+
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-3">
+
           {items.map((item) => (
             <div
               key={item.id}
@@ -190,35 +345,40 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
               className="
                 group
                 relative
-                mb-4
                 cursor-pointer
                 overflow-hidden
                 rounded-sm
                 shadow-sm
                 transition-shadow
-                hover:shadow-md
+                duration-500
+                hover:shadow-xl
               "
             >
-              <img
-                src={item.src}
-                alt={item.alt}
-                className="
-                  h-auto
-                  w-full
-                  object-cover
-                  transition-transform
-                  duration-700
-                  group-hover:scale-105
-                "
-              />
+              {/* Fixed ratio supaya semua foto simetris */}
+              <div className="aspect-[4/5]">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  loading="lazy"
+                  className="
+                    h-full
+                    w-full
+                    object-cover
+                    transition-transform
+                    duration-700
+                    group-hover:scale-105
+                  "
+                />
+              </div>
 
+              {/* Overlay */}
               <div
                 className="
                   absolute
                   inset-0
                   flex
-                  flex-col
-                  justify-end
+                  items-end
+                  justify-between
                   bg-black/40
                   p-4
                   text-white
@@ -228,16 +388,15 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
                   group-hover:opacity-100
                 "
               >
-                <div className="flex items-center justify-between">
-                  <span className="font-serif text-sm italic">
-                    {item.caption || item.alt}
-                  </span>
+                <span className="font-serif text-sm italic">
+                  {item.caption || item.alt}
+                </span>
 
-                  <Maximize2 className="h-4 w-4 text-[#d8b36a]" />
-                </div>
+                <Maximize2 className="h-4 w-4 text-[#d8b36a]" />
               </div>
             </div>
           ))}
+
         </div>
       </div>
     </section>
