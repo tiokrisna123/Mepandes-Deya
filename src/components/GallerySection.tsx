@@ -19,6 +19,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         bg-background
         px-6
         py-24
+        ${item.className || ''}
       "
     >
       {/* =========================
