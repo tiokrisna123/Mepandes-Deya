@@ -10,13 +10,30 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ autoStart }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // High quality traditional Balinese Gamelan ambient audio stream
-  const musicUrl = 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=indonesian-gamelan-traditional-112702.mp3';
+  const musicUrl = '/assets/audio/lagu.mp3';
 
   useEffect(() => {
-    if (autoStart) {
-      handlePlay();
-    }
-  }, [autoStart]);
+  if (!autoStart) return;
+
+  const startAudioOnInteraction = () => {
+    handlePlay();
+    // Hapus listener setelah interaksi pertama berhasil
+    window.removeEventListener('click', startAudioOnInteraction);
+    window.removeEventListener('touchstart', startAudioOnInteraction);
+  };
+
+  // Coba putar otomatis
+  handlePlay();
+
+  // Pasang listener jika autoplay di-block oleh browser
+  window.addEventListener('click', startAudioOnInteraction);
+  window.addEventListener('touchstart', startAudioOnInteraction);
+
+  return () => {
+    window.removeEventListener('click', startAudioOnInteraction);
+    window.removeEventListener('touchstart', startAudioOnInteraction);
+  };
+}, [autoStart]);
 
   const handlePlay = async () => {
     if (!audioRef.current) return;

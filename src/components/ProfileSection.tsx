@@ -298,12 +298,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
       ========================== */}
 
       <div className="relative z-30 mx-auto flex max-w-4xl flex-col items-center">
-        <p className="mb-3 text-center font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-gold">
-           PUTRI KAMI
-        </p>
-
         <h2 className="mb-16 text-center font-serif text-2xl uppercase tracking-widest text-white md:text-3xl">
-          Sang Saskara
+          PUTRI KAMI
         </h2>
 
         <div className="grid w-full max-w-3xl grid-cols-1 gap-12 md:grid-cols-3 md:gap-16">
