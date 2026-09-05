@@ -22,7 +22,6 @@ import {
 
 import { Wish } from './types';
 import { supabase } from './lib/supabase';
-import { useReveal } from './hooks/useReveal';
 
 export default function App() {
   console.log('[DEBUG] App.tsx LOADED');
@@ -41,7 +40,6 @@ export default function App() {
 
   const [isLinkGenOpen, setIsLinkGenOpen] = useState(false);
 
-  useReveal();
 
   // Read guest name from URL
   useEffect(() => {

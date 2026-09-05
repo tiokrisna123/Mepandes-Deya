@@ -1,15 +1,9 @@
 import React from 'react';
 import { Quote } from 'lucide-react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 export const QuoteSection: React.FC = () => {
   return (
-    <motion.section
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
+    <section
       className="
         relative
         -mt-[1px]
@@ -192,6 +186,6 @@ export const QuoteSection: React.FC = () => {
           Bhagawad Gita
         </p>
       </div>
-    </motion.section>
+    </section>
   );
 };

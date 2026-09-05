@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 import { Wish } from '../types';
 import { supabase } from '../lib/supabase';
 
@@ -156,11 +154,7 @@ alert('RSVP berhasil disimpan!');
   // =========================
 
   return (
-    <motion.section
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
+    <section
       className="
         relative
         overflow-visible
@@ -392,7 +386,7 @@ alert('RSVP berhasil disimpan!');
             TITLE
         ========================== */}
 
-        <div className="reveal mb-16">
+        <div className="mb-16">
 
           <h2
             className="
@@ -980,6 +974,6 @@ alert('RSVP berhasil disimpan!');
 
       </div>
 
-    </motion.section>
+    </section>
   );
 };

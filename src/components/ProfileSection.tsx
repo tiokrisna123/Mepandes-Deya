@@ -1,7 +1,5 @@
 import React from 'react';
 import { Profile } from '../types';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 interface ProfileSectionProps {
   profiles: Profile[];
@@ -13,11 +11,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   onSelectImage,
 }) => {
   return (
-    <motion.section
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }}
+    <section
       className="
         relative
         overflow-visible
@@ -303,7 +297,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           CONTENT
       ========================== */}
 
-      <div className="reveal relative z-30 mx-auto flex max-w-4xl flex-col items-center">
+      <div className="relative z-30 mx-auto flex max-w-4xl flex-col items-center">
         <h2 className="mb-16 text-center font-serif text-2xl uppercase tracking-widest text-white md:text-3xl">
           PUTRI KAMI
         </h2>
@@ -382,6 +376,6 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };

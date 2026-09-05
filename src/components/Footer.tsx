@@ -1,7 +1,5 @@
 import React from 'react';
 import { Share2 } from 'lucide-react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 interface FooterProps {
   onOpenLinkGenerator: () => void;
@@ -9,11 +7,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
   return (
-    <motion.footer
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
+    <footer
       className="relative overflow-visible bg-background px-6 py-20 text-white md:px-10 md:py-28"
     >
 
@@ -97,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
       />
 
       {/* CONTENT */}
-      <div className="reveal relative z-30 flex flex-col items-center">
+      <div className="relative z-30 flex flex-col items-center">
         <p className="mb-2 font-sans text-[8px] uppercase tracking-[0.4em] text-white/80">
           CREATED BY MAITEKA
         </p>
@@ -107,6 +101,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
         </p>
       </div>
 
-    </motion.footer>
+    </footer>
   );
 };

@@ -1,15 +1,9 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 export const MapSection: React.FC = () => {
   return (
-    <motion.section
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
+    <section
       className="relative overflow-visible bg-background px-8 py-16"
     >
       {/* =========================
@@ -134,7 +128,7 @@ export const MapSection: React.FC = () => {
       {/* =========================
           MAP CONTAINER
       ========================== */}
-      <div className="reveal relative z-10 mx-auto h-[450px] w-[90%] max-w-5xl overflow-hidden border border-primary/30 shadow-xl">
+      <div className="relative z-10 mx-auto h-[450px] w-[90%] max-w-5xl overflow-hidden border border-primary/30 shadow-xl">
         <iframe
           className="
             h-full
@@ -185,6 +179,6 @@ export const MapSection: React.FC = () => {
           </a>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };

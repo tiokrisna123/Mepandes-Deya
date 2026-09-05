@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 export const CountdownSection: React.FC = () => {
   const targetDate = new Date('2026-09-16T11:00:00+08:00').getTime();
@@ -57,11 +55,7 @@ export const CountdownSection: React.FC = () => {
   }, [targetDate]);
 
   return (
-    <motion.section
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
+    <section
       className="
         relative
         overflow-visible
@@ -158,7 +152,7 @@ export const CountdownSection: React.FC = () => {
           CONTENT
       ========================== */}
 
-      <div className="reveal relative z-30 mx-auto w-[95%] max-w-xl rounded-sm border border-primary/20 bg-gradient-to-br from-charcoal via-[#432326] to-primary p-4 shadow-2xl md:p-12">
+      <div className="relative z-30 mx-auto w-[95%] max-w-xl rounded-sm border border-primary/20 bg-gradient-to-br from-charcoal via-[#432326] to-primary p-4 shadow-2xl md:p-12">
         <p className="mb-8 font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-white/75 md:mb-12">
           HITUNG MUNDUR
         </p>
@@ -212,6 +206,6 @@ export const CountdownSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };

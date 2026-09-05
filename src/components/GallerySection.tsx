@@ -1,8 +1,6 @@
 import React from 'react';
 import { GalleryItem } from '../types';
 import { Maximize2 } from 'lucide-react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 interface GallerySectionProps {
   items: GalleryItem[];
@@ -14,11 +12,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
   onSelectImage,
 }) => {
   return (
-    <motion.section
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
+    <section
       className="
         relative
         overflow-visible
@@ -287,7 +281,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           CONTENT
       ========================== */}
 
-      <div className="reveal relative z-30 mx-auto max-w-6xl">
+      <div className="relative z-30 mx-auto max-w-6xl">
 
         <p
           className="
@@ -391,6 +385,6 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
 
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };

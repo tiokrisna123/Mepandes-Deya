@@ -6,8 +6,6 @@ import {
   ExternalLink,
   Check,
 } from 'lucide-react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 export const EventInfoSection: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -22,11 +20,7 @@ export const EventInfoSection: React.FC = () => {
   };
 
   return (
-    <motion.section
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
+    <section
       className="
         relative
         overflow-visible
@@ -274,7 +268,7 @@ export const EventInfoSection: React.FC = () => {
           CONTENT
       ========================== */}
 
-      <div className="reveal relative z-30 mx-auto max-w-4xl text-center">
+      <div className="relative z-30 mx-auto max-w-4xl text-center">
         <p className="mb-12 font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-ivory">
           WAKTU &amp; TEMPAT
         </p>
@@ -381,6 +375,6 @@ export const EventInfoSection: React.FC = () => {
           </button>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };

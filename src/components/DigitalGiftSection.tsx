@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 export interface DigitalAccount {
   id: string;
@@ -38,12 +36,8 @@ export function DigitalGiftSection({
   };
 
   return (
-    <motion.section
+    <section
       id="digital-gift"
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
       className="relative overflow-visible bg-background px-6 py-20 text-white md:px-10 md:py-28"
     >
       {/* =========================
@@ -209,7 +203,7 @@ export function DigitalGiftSection({
       <div className="pointer-events-none absolute -left-24 top-20 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-10 h-56 w-56 rounded-full bg-gold/10 blur-3xl" />
 
-      <div className="reveal relative z-30 mx-auto max-w-3xl">
+      <div className="relative z-30 mx-auto max-w-3xl">
         {/* Heading */}
         <div className="text-center">
           <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.35em] text-gold">
@@ -357,6 +351,6 @@ export function DigitalGiftSection({
           </p>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

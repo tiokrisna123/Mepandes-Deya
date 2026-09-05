@@ -1,14 +1,8 @@
 import React from 'react';
-import { motion } from 'motion/react';
-import { scrollRevealVariants } from '../lib/animations';
 
 export const HeroSection: React.FC = () => {
   return (
-    <motion.section
-      variants={scrollRevealVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.25 }}
+    <section
       className="relative h-screen w-full overflow-hidden bg-[#231512]"
     >
 
@@ -200,6 +194,6 @@ export const HeroSection: React.FC = () => {
         <div className="mx-auto mt-6 h-px w-16 bg-[#c9a65b]/70" />
       </div>
 
-    </motion.section>
+    </section>
   );
 };
