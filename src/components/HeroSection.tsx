@@ -1,14 +1,22 @@
 import React from 'react';
+import { motion } from 'motion/react';
+import { scrollRevealVariants } from '../lib/animations';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-[#231512]">
+    <motion.section
+      variants={scrollRevealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.25 }}
+      className="relative h-screen w-full overflow-hidden bg-[#231512]"
+    >
 
       {/* =========================
           BACKGROUND FOTO
       ========================== */}
       <img
-        src="/assets/foto-deya-berdua.jpeg"
+        src="/assets/foto-deya-berdua.webp"
         alt="Hero Background"
         className="
           absolute
@@ -28,7 +36,7 @@ export const HeroSection: React.FC = () => {
 
       {/* KIRI ATAS */}
       <img
-        src="/assets/floral-kiri-atas.png"
+        src="/assets/floral-kiri-atas.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -45,7 +53,7 @@ export const HeroSection: React.FC = () => {
 
       {/* KANAN ATAS */}
       <img
-        src="/assets/floral-kiri-atas.png"
+        src="/assets/floral-kiri-atas.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -63,7 +71,7 @@ export const HeroSection: React.FC = () => {
 
       {/* KIRI TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -82,7 +90,7 @@ export const HeroSection: React.FC = () => {
 
       {/* KANAN TENGAH BAWAH*/}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -102,7 +110,7 @@ export const HeroSection: React.FC = () => {
 
       {/* KIRI TENGAH BAWAH*/}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -121,7 +129,7 @@ export const HeroSection: React.FC = () => {
 
       {/* KANAN TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -153,7 +161,6 @@ export const HeroSection: React.FC = () => {
           -translate-x-1/2
           px-4
           text-center
-          reveal
           active
         "
       >
@@ -193,6 +200,6 @@ export const HeroSection: React.FC = () => {
         <div className="mx-auto mt-6 h-px w-16 bg-[#c9a65b]/70" />
       </div>
 
-    </section>
+    </motion.section>
   );
 };

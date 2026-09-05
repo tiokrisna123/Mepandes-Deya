@@ -1,6 +1,8 @@
 import React from 'react';
 import { GalleryItem } from '../types';
 import { Maximize2 } from 'lucide-react';
+import { motion } from 'motion/react';
+import { scrollRevealVariants } from '../lib/animations';
 
 interface GallerySectionProps {
   items: GalleryItem[];
@@ -12,7 +14,11 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
   onSelectImage,
 }) => {
   return (
-    <section
+    <motion.section
+      variants={scrollRevealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.25 }}
       className="
         relative
         overflow-visible
@@ -27,8 +33,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       ========================== */}
 
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -44,8 +49,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -62,8 +66,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -80,8 +83,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -99,8 +101,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -117,8 +118,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -135,8 +135,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -152,8 +151,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -170,8 +168,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -187,8 +184,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -205,8 +201,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -222,8 +217,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -239,8 +233,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -257,8 +250,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -274,8 +266,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.png"
-        alt=""
+        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
         className="
           pointer-events-none
           absolute
@@ -296,7 +287,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
           CONTENT
       ========================== */}
 
-      <div className="relative z-30 mx-auto max-w-6xl">
+      <div className="reveal relative z-30 mx-auto max-w-6xl">
 
         <p
           className="
@@ -400,6 +391,6 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
 
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

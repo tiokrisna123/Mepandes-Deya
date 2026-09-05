@@ -23,18 +23,15 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
       {/* =========================
           BACKGROUND FOTO
       ========================== */}
-      <div className="absolute inset-0 z-0 overflow-hidden bg-gradient-to-b from-[#28402F] via-[#1d3024] to-[#5C1A1F]">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img
-          src="/assets/foto-deya-bertiga.JPG"
+          src="/assets/foto-deya-bertiga.webp"
           alt="Mepandes Ceremony Cover"
-           className="h-full w-full object-cover"
-  style={{
-    objectPosition: '60% 60%',
-  }}
-/>
+          className="h-full w-full object-cover"
+        />
 
         {/* Overlay dasar */}
-        <div className="absolute inset-0 bg-black/0" />
+        <div className="absolute inset-0 bg-transparent" />
 
         {/* Vignette */}
         <div
@@ -44,8 +41,8 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
             bg-[radial-gradient(
               ellipse_at_center,
               transparent_18%,
-              rgba(40,64,47,0.20)_50%,
-              rgba(10,5,6,0.85)_100%
+              rgba(0,0,0,0.2)_50%,
+              rgba(0,0,0,0.7)_100%
             )]
           "
         />
@@ -57,7 +54,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
 
       {/* KIRI ATAS */}
       <img
-        src="/assets/floral-kiri-atas.png"
+        src="/assets/floral-kiri-atas.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -72,7 +69,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
 
       {/* KANAN ATAS */}
      <img 
-        src="/assets/floral-kiri-atas.png"
+        src="/assets/floral-kiri-atas.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -88,7 +85,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
       
       {/* KIRI BAWAH */}
       <img
-        src="/assets/floral-kiri-bawah.png"
+        src="/assets/floral-kiri-bawah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -103,7 +100,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
 
       {/* KANAN BAWAH */}
       <img
-        src="/assets/floral-kiri-bawah.png"
+        src="/assets/floral-kiri-bawah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -119,7 +116,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
 
       {/* FLORAL TENGAH KIRI */}
       {/* <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -138,7 +135,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
 
       {/* FLORAL TENGAH KANAN */}
       {/*<img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -332,3 +329,4 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
     </div>
   );
 };
+

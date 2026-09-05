@@ -1,9 +1,15 @@
 import React from 'react';
 import { Quote } from 'lucide-react';
+import { motion } from 'motion/react';
+import { scrollRevealVariants } from '../lib/animations';
 
 export const QuoteSection: React.FC = () => {
   return (
-    <section
+    <motion.section
+      variants={scrollRevealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
       className="
         relative
         -mt-[1px]
@@ -21,7 +27,7 @@ export const QuoteSection: React.FC = () => {
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -40,7 +46,7 @@ export const QuoteSection: React.FC = () => {
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -59,7 +65,7 @@ export const QuoteSection: React.FC = () => {
 
       {/* KIRI TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -78,7 +84,7 @@ export const QuoteSection: React.FC = () => {
 
       {/* KANAN TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -98,7 +104,7 @@ export const QuoteSection: React.FC = () => {
 
       {/* KIRI TENGAH BAWAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -117,7 +123,7 @@ export const QuoteSection: React.FC = () => {
 
       {/* KANAN TENGAH BAWAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -147,7 +153,6 @@ export const QuoteSection: React.FC = () => {
           w-full
           max-w-[280px]
           -translate-y-10
-          reveal
           active
         "
       >
@@ -187,6 +192,6 @@ export const QuoteSection: React.FC = () => {
           Bhagawad Gita
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };

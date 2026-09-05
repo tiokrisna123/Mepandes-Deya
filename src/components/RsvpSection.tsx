@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
+import { scrollRevealVariants } from '../lib/animations';
 import { Wish } from '../types';
 import { supabase } from '../lib/supabase';
 
@@ -154,7 +156,11 @@ alert('RSVP berhasil disimpan!');
   // =========================
 
   return (
-    <section
+    <motion.section
+      variants={scrollRevealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.25 }}
       className="
         relative
         overflow-visible
@@ -173,7 +179,7 @@ alert('RSVP berhasil disimpan!');
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -191,7 +197,7 @@ alert('RSVP berhasil disimpan!');
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -210,7 +216,7 @@ alert('RSVP berhasil disimpan!');
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -228,7 +234,7 @@ alert('RSVP berhasil disimpan!');
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -247,7 +253,7 @@ alert('RSVP berhasil disimpan!');
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -265,7 +271,7 @@ alert('RSVP berhasil disimpan!');
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -284,7 +290,7 @@ alert('RSVP berhasil disimpan!');
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -303,7 +309,7 @@ alert('RSVP berhasil disimpan!');
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -323,7 +329,7 @@ alert('RSVP berhasil disimpan!');
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -342,7 +348,7 @@ alert('RSVP berhasil disimpan!');
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -386,7 +392,7 @@ alert('RSVP berhasil disimpan!');
             TITLE
         ========================== */}
 
-        <div className="reveal active mb-16">
+        <div className="reveal mb-16">
 
           <h2
             className="
@@ -506,7 +512,6 @@ alert('RSVP berhasil disimpan!');
           className="
             space-y-8
             text-left
-            reveal
             active
           "
         >
@@ -975,6 +980,6 @@ alert('RSVP berhasil disimpan!');
 
       </div>
 
-    </section>
+    </motion.section>
   );
 };

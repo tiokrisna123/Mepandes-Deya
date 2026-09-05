@@ -1,9 +1,17 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
+import { motion } from 'motion/react';
+import { scrollRevealVariants } from '../lib/animations';
 
 export const MapSection: React.FC = () => {
   return (
-    <section className="relative overflow-visible bg-background px-8 py-16 reveal active">
+    <motion.section
+      variants={scrollRevealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.25 }}
+      className="relative overflow-visible bg-background px-8 py-16"
+    >
       {/* =========================
           FLORAL FRAME
       ========================== */}
@@ -11,7 +19,7 @@ export const MapSection: React.FC = () => {
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -29,7 +37,7 @@ export const MapSection: React.FC = () => {
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -48,7 +56,7 @@ export const MapSection: React.FC = () => {
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -66,7 +74,7 @@ export const MapSection: React.FC = () => {
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -85,7 +93,7 @@ export const MapSection: React.FC = () => {
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -104,7 +112,7 @@ export const MapSection: React.FC = () => {
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -126,7 +134,7 @@ export const MapSection: React.FC = () => {
       {/* =========================
           MAP CONTAINER
       ========================== */}
-      <div className="relative z-10 mx-auto h-[450px] w-[90%] max-w-5xl overflow-hidden border border-primary/30 shadow-xl">
+      <div className="reveal relative z-10 mx-auto h-[450px] w-[90%] max-w-5xl overflow-hidden border border-primary/30 shadow-xl">
         <iframe
           className="
             h-full
@@ -177,6 +185,6 @@ export const MapSection: React.FC = () => {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

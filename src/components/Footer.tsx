@@ -1,5 +1,7 @@
 import React from 'react';
 import { Share2 } from 'lucide-react';
+import { motion } from 'motion/react';
+import { scrollRevealVariants } from '../lib/animations';
 
 interface FooterProps {
   onOpenLinkGenerator: () => void;
@@ -7,7 +9,13 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
   return (
-    <footer className="relative overflow-visible bg-background px-6 py-20 text-white md:px-10 md:py-28">
+    <motion.footer
+      variants={scrollRevealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.25 }}
+      className="relative overflow-visible bg-background px-6 py-20 text-white md:px-10 md:py-28"
+    >
 
       {/* =========================
           FLORAL FRAME
@@ -16,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
       {/* KIRI TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -34,7 +42,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
       {/* KANAN TENGAH ATAS
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -53,7 +61,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
       {/* KIRI BAWAH
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-bawah.png"
+        src="/assets/floral-kiri-bawah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -71,7 +79,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
       {/* KANAN BAWAH
           Sambungan dari Hero Section */}
       <img
-        src="/assets/floral-kiri-bawah.png"
+        src="/assets/floral-kiri-bawah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -89,7 +97,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
       />
 
       {/* CONTENT */}
-      <div className="relative z-30 reveal active flex flex-col items-center">
+      <div className="reveal relative z-30 flex flex-col items-center">
         <p className="mb-2 font-sans text-[8px] uppercase tracking-[0.4em] text-white/80">
           CREATED BY MAITEKA
         </p>
@@ -99,6 +107,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLinkGenerator }) => {
         </p>
       </div>
 
-    </footer>
+    </motion.footer>
   );
 };

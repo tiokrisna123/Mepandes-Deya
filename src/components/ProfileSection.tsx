@@ -1,5 +1,7 @@
 import React from 'react';
 import { Profile } from '../types';
+import { motion } from 'motion/react';
+import { scrollRevealVariants } from '../lib/animations';
 
 interface ProfileSectionProps {
   profiles: Profile[];
@@ -11,7 +13,11 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   onSelectImage,
 }) => {
   return (
-    <section
+    <motion.section
+      variants={scrollRevealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
       className="
         relative
         overflow-visible
@@ -26,7 +32,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KIRI TENGAH ATAS */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -44,7 +50,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KANAN TENGAH ATAS */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -63,7 +69,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KIRI TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -82,7 +88,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KANAN TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -102,7 +108,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KIRI TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -121,7 +127,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KANAN TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -141,7 +147,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KIRI TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -160,7 +166,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KANAN TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -180,7 +186,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KIRI TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -199,7 +205,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KANAN TENGAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -219,7 +225,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KIRI TENGAH BAWAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -238,7 +244,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
 
       {/* KANAN TENGAH BAWAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -257,7 +263,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
       />
       {/* KIRI TENGAH BAWAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -275,7 +281,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
       />
       {/* KANAN TENGAH BAWAH */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -297,7 +303,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           CONTENT
       ========================== */}
 
-      <div className="relative z-30 mx-auto flex max-w-4xl flex-col items-center">
+      <div className="reveal relative z-30 mx-auto flex max-w-4xl flex-col items-center">
         <h2 className="mb-16 text-center font-serif text-2xl uppercase tracking-widest text-white md:text-3xl">
           PUTRI KAMI
         </h2>
@@ -306,7 +312,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           {profiles.map((person) => (
             <div
               key={person.id}
-              className="group reveal active flex flex-col items-center text-center"
+              className="group flex flex-col items-center text-center"
             >
               {/* FOTO */}
               <div
@@ -376,6 +382,6 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

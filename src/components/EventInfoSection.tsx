@@ -6,6 +6,8 @@ import {
   ExternalLink,
   Check,
 } from 'lucide-react';
+import { motion } from 'motion/react';
+import { scrollRevealVariants } from '../lib/animations';
 
 export const EventInfoSection: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -20,7 +22,11 @@ export const EventInfoSection: React.FC = () => {
   };
 
   return (
-    <section
+    <motion.section
+      variants={scrollRevealVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.25 }}
       className="
         relative
         overflow-visible
@@ -36,7 +42,7 @@ export const EventInfoSection: React.FC = () => {
       {/* KIRI ATAS
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -54,7 +60,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KANAN ATAS
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -73,7 +79,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KIRI ATAS
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -91,7 +97,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KANAN ATAS
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -110,7 +116,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KIRI TENGAH
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -129,7 +135,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KANAN TENGAH
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -149,7 +155,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KIRI BAWAH
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -168,7 +174,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KANAN BAWAH
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -188,7 +194,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KIRI BAWAH
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -207,7 +213,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KANAN BAWAH
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -227,7 +233,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KIRI BAWAH
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -246,7 +252,7 @@ export const EventInfoSection: React.FC = () => {
         {/* KANAN BAWAH
           Sambungan dari Gallery Section */}
       <img
-        src="/assets/floral-kiri-tengah.png"
+        src="/assets/floral-kiri-tengah.webp" loading="lazy" decoding="async"
         alt=""
         className="
           pointer-events-none
@@ -268,7 +274,7 @@ export const EventInfoSection: React.FC = () => {
           CONTENT
       ========================== */}
 
-      <div className="relative z-30 mx-auto max-w-4xl text-center reveal active">
+      <div className="reveal relative z-30 mx-auto max-w-4xl text-center">
         <p className="mb-12 font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-ivory">
           WAKTU &amp; TEMPAT
         </p>
@@ -375,6 +381,6 @@ export const EventInfoSection: React.FC = () => {
           </button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

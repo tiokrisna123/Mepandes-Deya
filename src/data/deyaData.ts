@@ -15,21 +15,21 @@ export const PROFILES: Profile[] = [
     id: 'putu',
     name: 'Wayan Alya Febriayu',
     order: 'Anak Pertama',
-    image: '/assets/foto-alya-profile.JPG',
+    image: '/assets/foto-alya-profile.webp',
     bio: 'Putri Pertama dari Pasangan I Made Suryasa & N. Suressumiati',
   },
   {
     id: 'made',
     name: 'Made Deya Indriyani',
     order: 'Anak Kedua',
-    image: '/assets/foto-deya-profile.JPG',
+    image: '/assets/foto-deya-profile.webp',
     bio: 'Putri Kedua dari Pasangan I Made Suryasa & N. Suressumiati',
   },
   {
     id: 'nyoman',
     name: 'Komang Resya Juwanita Dewi',
     order: 'Anak Ketiga',
-    image: '/assets/foto-resya-profilee.JPG',
+    image: '/assets/foto-resya-profilee.webp',
     bio: 'Putri Ketiga dari Pasangan I Made Suryasa & N. Suressumiati',
   },
 ];
@@ -41,7 +41,7 @@ export const PROFILES: Profile[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'gal-1',
-    src: '/assets/foto-deya-bertiga.JPG',
+    src: '/assets/foto-deya-bertiga.webp',
     alt: 'Suasana Bali',
     caption: 'Kenangan Suci',
   },

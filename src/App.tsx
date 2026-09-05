@@ -22,6 +22,7 @@ import {
 
 import { Wish } from './types';
 import { supabase } from './lib/supabase';
+import { useReveal } from './hooks/useReveal';
 
 export default function App() {
   console.log('[DEBUG] App.tsx LOADED');
@@ -39,6 +40,8 @@ export default function App() {
   } | null>(null);
 
   const [isLinkGenOpen, setIsLinkGenOpen] = useState(false);
+
+  useReveal();
 
   // Read guest name from URL
   useEffect(() => {
@@ -103,33 +106,6 @@ useEffect(() => {
 
   loadWishes();
 }, []);
-
-  // Handle reveal animation
-  useEffect(() => {
-    const handleScroll = () => {
-      const reveals = document.querySelectorAll('.reveal');
-
-      reveals.forEach((el) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-
-        if (elementTop < windowHeight - 80) {
-          el.classList.add('active');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    handleScroll();
-
-    return () => {
-      window.removeEventListener(
-        'scroll',
-        handleScroll
-      );
-    };
-  }, [isOpen]);
 
   const handleOpenInvitation = () => {
     setIsOpen(true);
