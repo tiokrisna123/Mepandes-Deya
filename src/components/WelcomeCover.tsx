@@ -14,7 +14,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
   return (
     <div
       id="welcome-cover"
-      className={`fixed inset-0 z-[100] flex flex-col overflow-hidden px-6 text-center transition-transform duration-1000 cubic-bezier(0.77,0,0.175,1) md:px-8 ${
+      className={`fixed inset-0 z-[100] flex h-[100svh] min-h-[100svh] flex-col overflow-hidden px-6 text-center transition-transform duration-1000 cubic-bezier(0.77,0,0.175,1) md:h-screen md:min-h-0 md:px-8 ${
         isOpen
           ? '-translate-y-full pointer-events-none'
           : 'translate-y-0'
@@ -329,4 +329,3 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
     </div>
   );
 };
-

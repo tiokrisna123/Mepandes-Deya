@@ -40,6 +40,30 @@ export default function App() {
 
   const [isLinkGenOpen, setIsLinkGenOpen] = useState(false);
 
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+    const previousHtmlOverflow = html.style.overflow;
+    const previousBodyOverflow = body.style.overflow;
+    const previousBodyTouchAction = body.style.touchAction;
+
+    if (isOpen) {
+      html.style.overflow = '';
+      body.style.overflow = '';
+      body.style.touchAction = '';
+    } else {
+      html.style.overflow = 'hidden';
+      body.style.overflow = 'hidden';
+      body.style.touchAction = 'none';
+    }
+
+    return () => {
+      html.style.overflow = previousHtmlOverflow;
+      body.style.overflow = previousBodyOverflow;
+      body.style.touchAction = previousBodyTouchAction;
+    };
+  }, [isOpen]);
+
 
   // Read guest name from URL
   useEffect(() => {
@@ -107,8 +131,6 @@ useEffect(() => {
 
   const handleOpenInvitation = () => {
     setIsOpen(true);
-
-    document.body.classList.remove('no-scroll');
   };
 
   const handleAddWish = (

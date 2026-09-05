@@ -3,7 +3,7 @@ import React from 'react';
 export const HeroSection: React.FC = () => {
   return (
     <section
-      className="relative h-screen w-full overflow-hidden bg-[#231512]"
+      className="relative h-[100dvh] min-h-[100svh] w-full overflow-hidden bg-[#231512] md:h-screen md:min-h-0"
     >
 
       {/* =========================
