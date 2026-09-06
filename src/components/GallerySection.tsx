@@ -19,7 +19,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         bg-background
         px-6
         py-24
-        ${item.className || ''}
+        
       "
     >
       {/* =========================
@@ -27,7 +27,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       ========================== */}
 
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -43,7 +44,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -60,7 +62,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -77,7 +80,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -95,7 +99,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -112,7 +117,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
       />
 
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -129,7 +135,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -145,7 +152,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -162,7 +170,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -178,7 +187,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -195,7 +205,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -211,7 +222,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -227,7 +239,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -244,7 +257,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -260,7 +274,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
         "
       />
       <img
-        src="/assets/floral-kiri-tengah.webp" alt="" loading="lazy" decoding="async"
+        src="/assets/floral-kiri-tengah.png"
+        alt=""
         className="
           pointer-events-none
           absolute
@@ -341,21 +356,23 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
               "
             >
               {/* Fixed ratio supaya semua foto simetris */}
-              <div className="aspect-[4/5]">
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  loading="lazy"
-                  className="
-                    h-full
-                    w-full
-                    object-cover
-                    transition-transform
-                    duration-700
-                    group-hover:scale-105
-                  "
-                />
-              </div>
+             <div className="aspect-[4/5] overflow-hidden">
+  <img
+    src={item.src}
+    alt={item.alt}
+    loading="lazy"
+    className="
+      block
+      h-full
+      w-full
+      object-cover
+      object-center
+      transition-transform
+      duration-700
+      group-hover:scale-105
+    "
+  />
+</div>
 
               {/* Overlay */}
               <div

@@ -25,7 +25,7 @@ export const WelcomeCover: React.FC<WelcomeCoverProps> = ({
       ========================== */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
-          src="/assets/foto-deya-bertiga.webp"
+          src="/assets/foto-deya-bertiga.JPG"
           alt="Mepandes Ceremony Cover"
           className="h-full w-full object-cover"
         />
