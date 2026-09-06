@@ -41,7 +41,7 @@ export const PROFILES: Profile[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'gal-1',
-    src: '/assets/foto-deya-bertiga.webp',
+    src: '/assets/foto-deya-bertiga.JPG',
     alt: 'Suasana Bali',
     caption: 'Kenangan Suci',
   },
